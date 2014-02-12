@@ -1,0 +1,31 @@
+ 
+Team Mostly Harmless:
+Jack Burns
+Joana Vukatana
+
+# CS3600 Project 1 - Shell
+
+This was the first project for CS3600. The project consisted in implementing a simple shell which is used to launch programs. Our shell has different features:
+1- It handles input/output redirection.
+2- It supports background processing.
+
+STDIN:
+    cmd arg1 arg2 ... argN < stdin_file
+
+STDOUT:
+    cmd arg1 arg2 ... argN > stdout_file
+
+STDERR:
+    cmd arg1 arg2 ... argN 2> stderr_file
+
+The redirections can be combined in different orders, buy used only once. 
+    cmd arg1 arg2 ... argN < stdin_file 2> stderr_file > stdout_file
+
+3- It maintains the current working directory.
+4- It handles escape characters and whitespace between arguments.
+5- Supports the special 'exit' command. When that command is entered, the shell exits.
+6- Array implementation combined with memory reallocation allows for arbitrarily large inputs.
+7- Display relevant errors messages when a fault is detected, like an invalid input.
+
+However, there as some other features that the shell doesn't support. For example, even though it was suggested to us, the shell doesn't handle the 'cd' command, or high level features. Also, some of the tests in the script don't pass. 
+One of the biggest challenge as we were working on this project was to make the code stable. When running the tests, sometimes it passes 31, sometimes 29, and 31 again. This is caused by our implementation of backgrounding where a child process continued running after the shell called do_exit().  Another was actually deciphering why some tests were failing, as in interpreting the output.
