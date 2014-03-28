@@ -1,0 +1,4479 @@
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test1.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 2
+   unique: 3, success, outsize: 160
+unique: 4, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 4, success, outsize: 32
+unique: 5, opcode: FLUSH (25), nodeid: 2, insize: 64
+   unique: 5, error: -38 (Function not implemented), outsize: 16
+unique: 6, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 6, success, outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 7, error: -2 (No such file or directory), outsize: 16
+unique: 8, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test2.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   NODEID: 3
+   unique: 8, success, outsize: 160
+unique: 9, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 9, success, outsize: 32
+unique: 10, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 10, success, outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 11, error: -2 (No such file or directory), outsize: 16
+unique: 12, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test3.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 4
+   unique: 12, success, outsize: 160
+unique: 13, opcode: IOCTL (39), nodeid: 4, insize: 72
+   unique: 13, success, outsize: 32
+unique: 14, opcode: RELEASE (18), nodeid: 4, insize: 64
+   unique: 14, success, outsize: 16
+unique: 15, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test2.txt
+   unique: 15, success, outsize: 16
+unique: 16, opcode: FORGET (2), nodeid: 3, insize: 48
+FORGET 3/1
+DELETE: 3
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 17, error: -2 (No such file or directory), outsize: 16
+vfs_unmount called
+Disk usage: 70015 reads, 6 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 2
+   unique: 2, success, outsize: 144
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 3
+   unique: 3, success, outsize: 144
+vfs_unmount called
+Disk usage: 5 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+getattr /file0
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file0 0100644 umask=0022
+   create[0] flags: 0x8241 /file0
+getattr /file0
+vfs_getattr called
+   NODEID: 2
+   unique: 3, success, outsize: 160
+unique: 4, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 4, success, outsize: 32
+unique: 5, opcode: FLUSH (25), nodeid: 2, insize: 64
+   unique: 5, error: -38 (Function not implemented), outsize: 16
+unique: 6, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 6, success, outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+getattr /file1
+vfs_getattr called
+   unique: 7, error: -2 (No such file or directory), outsize: 16
+unique: 8, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file1 0100644 umask=0022
+   create[0] flags: 0x8241 /file1
+getattr /file1
+vfs_getattr called
+   NODEID: 3
+   unique: 8, success, outsize: 160
+unique: 9, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 9, success, outsize: 32
+unique: 10, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 10, success, outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+getattr /file2
+vfs_getattr called
+   unique: 11, error: -2 (No such file or directory), outsize: 16
+unique: 12, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file2 0100644 umask=0022
+   create[0] flags: 0x8241 /file2
+getattr /file2
+vfs_getattr called
+   NODEID: 4
+   unique: 12, success, outsize: 160
+unique: 13, opcode: IOCTL (39), nodeid: 4, insize: 72
+   unique: 13, success, outsize: 32
+unique: 14, opcode: RELEASE (18), nodeid: 4, insize: 64
+   unique: 14, success, outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+getattr /file3
+vfs_getattr called
+   unique: 15, error: -2 (No such file or directory), outsize: 16
+unique: 16, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file3 0100644 umask=0022
+   create[0] flags: 0x8241 /file3
+getattr /file3
+vfs_getattr called
+   NODEID: 5
+   unique: 16, success, outsize: 160
+unique: 17, opcode: IOCTL (39), nodeid: 5, insize: 72
+   unique: 17, success, outsize: 32
+unique: 18, opcode: RELEASE (18), nodeid: 5, insize: 64
+   unique: 18, success, outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+getattr /file4
+vfs_getattr called
+   unique: 19, error: -2 (No such file or directory), outsize: 16
+unique: 20, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file4 0100644 umask=0022
+   create[0] flags: 0x8241 /file4
+getattr /file4
+vfs_getattr called
+   NODEID: 6
+   unique: 20, success, outsize: 160
+unique: 21, opcode: IOCTL (39), nodeid: 6, insize: 72
+   unique: 21, success, outsize: 32
+unique: 22, opcode: RELEASE (18), nodeid: 6, insize: 64
+   unique: 22, success, outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+getattr /file5
+vfs_getattr called
+   unique: 23, error: -2 (No such file or directory), outsize: 16
+unique: 24, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file5 0100644 umask=0022
+   create[0] flags: 0x8241 /file5
+getattr /file5
+vfs_getattr called
+   NODEID: 7
+   unique: 24, success, outsize: 160
+unique: 25, opcode: IOCTL (39), nodeid: 7, insize: 72
+   unique: 25, success, outsize: 32
+unique: 26, opcode: RELEASE (18), nodeid: 7, insize: 64
+   unique: 26, success, outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+getattr /file6
+vfs_getattr called
+   unique: 27, error: -2 (No such file or directory), outsize: 16
+unique: 28, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file6 0100644 umask=0022
+   create[0] flags: 0x8241 /file6
+getattr /file6
+vfs_getattr called
+   NODEID: 8
+   unique: 28, success, outsize: 160
+unique: 29, opcode: IOCTL (39), nodeid: 8, insize: 72
+   unique: 29, success, outsize: 32
+unique: 30, opcode: RELEASE (18), nodeid: 8, insize: 64
+   unique: 30, success, outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+getattr /file7
+vfs_getattr called
+   unique: 31, error: -2 (No such file or directory), outsize: 16
+unique: 32, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file7 0100644 umask=0022
+   create[0] flags: 0x8241 /file7
+getattr /file7
+vfs_getattr called
+   NODEID: 9
+   unique: 32, success, outsize: 160
+unique: 33, opcode: IOCTL (39), nodeid: 9, insize: 72
+   unique: 33, success, outsize: 32
+unique: 34, opcode: RELEASE (18), nodeid: 9, insize: 64
+   unique: 34, success, outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+getattr /file8
+vfs_getattr called
+   unique: 35, error: -2 (No such file or directory), outsize: 16
+unique: 36, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file8 0100644 umask=0022
+   create[0] flags: 0x8241 /file8
+getattr /file8
+vfs_getattr called
+   NODEID: 10
+   unique: 36, success, outsize: 160
+unique: 37, opcode: IOCTL (39), nodeid: 10, insize: 72
+   unique: 37, success, outsize: 32
+unique: 38, opcode: RELEASE (18), nodeid: 10, insize: 64
+   unique: 38, success, outsize: 16
+unique: 39, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+getattr /file9
+vfs_getattr called
+   unique: 39, error: -2 (No such file or directory), outsize: 16
+unique: 40, opcode: CREATE (35), nodeid: 1, insize: 62
+create flags: 0x8241 /file9 0100644 umask=0022
+   create[0] flags: 0x8241 /file9
+getattr /file9
+vfs_getattr called
+   NODEID: 11
+   unique: 40, success, outsize: 160
+unique: 41, opcode: IOCTL (39), nodeid: 11, insize: 72
+   unique: 41, success, outsize: 32
+unique: 42, opcode: RELEASE (18), nodeid: 11, insize: 64
+   unique: 42, success, outsize: 16
+unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+getattr /file10
+vfs_getattr called
+   unique: 43, error: -2 (No such file or directory), outsize: 16
+unique: 44, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file10 0100644 umask=0022
+   create[0] flags: 0x8241 /file10
+getattr /file10
+vfs_getattr called
+   NODEID: 12
+   unique: 44, success, outsize: 160
+unique: 45, opcode: IOCTL (39), nodeid: 12, insize: 72
+   unique: 45, success, outsize: 32
+unique: 46, opcode: RELEASE (18), nodeid: 12, insize: 64
+   unique: 46, success, outsize: 16
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+getattr /file11
+vfs_getattr called
+   unique: 47, error: -2 (No such file or directory), outsize: 16
+unique: 48, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file11 0100644 umask=0022
+   create[0] flags: 0x8241 /file11
+getattr /file11
+vfs_getattr called
+   NODEID: 13
+   unique: 48, success, outsize: 160
+unique: 49, opcode: IOCTL (39), nodeid: 13, insize: 72
+   unique: 49, success, outsize: 32
+unique: 50, opcode: RELEASE (18), nodeid: 13, insize: 64
+   unique: 50, success, outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+getattr /file12
+vfs_getattr called
+   unique: 51, error: -2 (No such file or directory), outsize: 16
+unique: 52, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file12 0100644 umask=0022
+   create[0] flags: 0x8241 /file12
+getattr /file12
+vfs_getattr called
+   NODEID: 14
+   unique: 52, success, outsize: 160
+unique: 53, opcode: IOCTL (39), nodeid: 14, insize: 72
+   unique: 53, success, outsize: 32
+unique: 54, opcode: RELEASE (18), nodeid: 14, insize: 64
+   unique: 54, success, outsize: 16
+unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+getattr /file13
+vfs_getattr called
+   unique: 55, error: -2 (No such file or directory), outsize: 16
+unique: 56, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file13 0100644 umask=0022
+   create[0] flags: 0x8241 /file13
+getattr /file13
+vfs_getattr called
+   NODEID: 15
+   unique: 56, success, outsize: 160
+unique: 57, opcode: IOCTL (39), nodeid: 15, insize: 72
+   unique: 57, success, outsize: 32
+unique: 58, opcode: RELEASE (18), nodeid: 15, insize: 64
+   unique: 58, success, outsize: 16
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+getattr /file14
+vfs_getattr called
+   unique: 59, error: -2 (No such file or directory), outsize: 16
+unique: 60, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file14 0100644 umask=0022
+   create[0] flags: 0x8241 /file14
+getattr /file14
+vfs_getattr called
+   NODEID: 16
+   unique: 60, success, outsize: 160
+unique: 61, opcode: IOCTL (39), nodeid: 16, insize: 72
+   unique: 61, success, outsize: 32
+unique: 62, opcode: RELEASE (18), nodeid: 16, insize: 64
+   unique: 62, success, outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+getattr /file15
+vfs_getattr called
+   unique: 63, error: -2 (No such file or directory), outsize: 16
+unique: 64, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file15 0100644 umask=0022
+   create[0] flags: 0x8241 /file15
+getattr /file15
+vfs_getattr called
+   NODEID: 17
+   unique: 64, success, outsize: 160
+unique: 65, opcode: IOCTL (39), nodeid: 17, insize: 72
+   unique: 65, success, outsize: 32
+unique: 66, opcode: RELEASE (18), nodeid: 17, insize: 64
+   unique: 66, success, outsize: 16
+unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+getattr /file16
+vfs_getattr called
+   unique: 67, error: -2 (No such file or directory), outsize: 16
+unique: 68, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file16 0100644 umask=0022
+   create[0] flags: 0x8241 /file16
+getattr /file16
+vfs_getattr called
+   NODEID: 18
+   unique: 68, success, outsize: 160
+unique: 69, opcode: IOCTL (39), nodeid: 18, insize: 72
+   unique: 69, success, outsize: 32
+unique: 70, opcode: RELEASE (18), nodeid: 18, insize: 64
+   unique: 70, success, outsize: 16
+unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+getattr /file17
+vfs_getattr called
+   unique: 71, error: -2 (No such file or directory), outsize: 16
+unique: 72, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file17 0100644 umask=0022
+   create[0] flags: 0x8241 /file17
+getattr /file17
+vfs_getattr called
+   NODEID: 19
+   unique: 72, success, outsize: 160
+unique: 73, opcode: IOCTL (39), nodeid: 19, insize: 72
+   unique: 73, success, outsize: 32
+unique: 74, opcode: RELEASE (18), nodeid: 19, insize: 64
+   unique: 74, success, outsize: 16
+unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+getattr /file18
+vfs_getattr called
+   unique: 75, error: -2 (No such file or directory), outsize: 16
+unique: 76, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file18 0100644 umask=0022
+   create[0] flags: 0x8241 /file18
+getattr /file18
+vfs_getattr called
+   NODEID: 20
+   unique: 76, success, outsize: 160
+unique: 77, opcode: IOCTL (39), nodeid: 20, insize: 72
+   unique: 77, success, outsize: 32
+unique: 78, opcode: RELEASE (18), nodeid: 20, insize: 64
+   unique: 78, success, outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+getattr /file19
+vfs_getattr called
+   unique: 79, error: -2 (No such file or directory), outsize: 16
+unique: 80, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file19 0100644 umask=0022
+   create[0] flags: 0x8241 /file19
+getattr /file19
+vfs_getattr called
+   NODEID: 21
+   unique: 80, success, outsize: 160
+unique: 81, opcode: IOCTL (39), nodeid: 21, insize: 72
+   unique: 81, success, outsize: 32
+unique: 82, opcode: RELEASE (18), nodeid: 21, insize: 64
+   unique: 82, success, outsize: 16
+unique: 83, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+getattr /file20
+vfs_getattr called
+   unique: 83, error: -2 (No such file or directory), outsize: 16
+unique: 84, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file20 0100644 umask=0022
+   create[0] flags: 0x8241 /file20
+getattr /file20
+vfs_getattr called
+   NODEID: 22
+   unique: 84, success, outsize: 160
+unique: 85, opcode: IOCTL (39), nodeid: 22, insize: 72
+   unique: 85, success, outsize: 32
+unique: 86, opcode: RELEASE (18), nodeid: 22, insize: 64
+   unique: 86, success, outsize: 16
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+getattr /file21
+vfs_getattr called
+   unique: 87, error: -2 (No such file or directory), outsize: 16
+unique: 88, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file21 0100644 umask=0022
+   create[0] flags: 0x8241 /file21
+getattr /file21
+vfs_getattr called
+   NODEID: 23
+   unique: 88, success, outsize: 160
+unique: 89, opcode: IOCTL (39), nodeid: 23, insize: 72
+   unique: 89, success, outsize: 32
+unique: 90, opcode: RELEASE (18), nodeid: 23, insize: 64
+   unique: 90, success, outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+getattr /file22
+vfs_getattr called
+   unique: 91, error: -2 (No such file or directory), outsize: 16
+unique: 92, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file22 0100644 umask=0022
+   create[0] flags: 0x8241 /file22
+getattr /file22
+vfs_getattr called
+   NODEID: 24
+   unique: 92, success, outsize: 160
+unique: 93, opcode: IOCTL (39), nodeid: 24, insize: 72
+   unique: 93, success, outsize: 32
+unique: 94, opcode: RELEASE (18), nodeid: 24, insize: 64
+   unique: 94, success, outsize: 16
+unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+getattr /file23
+vfs_getattr called
+   unique: 95, error: -2 (No such file or directory), outsize: 16
+unique: 96, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file23 0100644 umask=0022
+   create[0] flags: 0x8241 /file23
+getattr /file23
+vfs_getattr called
+   NODEID: 25
+   unique: 96, success, outsize: 160
+unique: 97, opcode: IOCTL (39), nodeid: 25, insize: 72
+   unique: 97, success, outsize: 32
+unique: 98, opcode: RELEASE (18), nodeid: 25, insize: 64
+   unique: 98, success, outsize: 16
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+getattr /file24
+vfs_getattr called
+   unique: 99, error: -2 (No such file or directory), outsize: 16
+unique: 100, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file24 0100644 umask=0022
+   create[0] flags: 0x8241 /file24
+getattr /file24
+vfs_getattr called
+   NODEID: 26
+   unique: 100, success, outsize: 160
+unique: 101, opcode: IOCTL (39), nodeid: 26, insize: 72
+   unique: 101, success, outsize: 32
+unique: 102, opcode: RELEASE (18), nodeid: 26, insize: 64
+   unique: 102, success, outsize: 16
+unique: 103, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+getattr /file25
+vfs_getattr called
+   unique: 103, error: -2 (No such file or directory), outsize: 16
+unique: 104, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file25 0100644 umask=0022
+   create[0] flags: 0x8241 /file25
+getattr /file25
+vfs_getattr called
+   NODEID: 27
+   unique: 104, success, outsize: 160
+unique: 105, opcode: IOCTL (39), nodeid: 27, insize: 72
+   unique: 105, success, outsize: 32
+unique: 106, opcode: RELEASE (18), nodeid: 27, insize: 64
+   unique: 106, success, outsize: 16
+unique: 107, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+getattr /file26
+vfs_getattr called
+   unique: 107, error: -2 (No such file or directory), outsize: 16
+unique: 108, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file26 0100644 umask=0022
+   create[0] flags: 0x8241 /file26
+getattr /file26
+vfs_getattr called
+   NODEID: 28
+   unique: 108, success, outsize: 160
+unique: 109, opcode: IOCTL (39), nodeid: 28, insize: 72
+   unique: 109, success, outsize: 32
+unique: 110, opcode: RELEASE (18), nodeid: 28, insize: 64
+   unique: 110, success, outsize: 16
+unique: 111, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+getattr /file27
+vfs_getattr called
+   unique: 111, error: -2 (No such file or directory), outsize: 16
+unique: 112, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file27 0100644 umask=0022
+   create[0] flags: 0x8241 /file27
+getattr /file27
+vfs_getattr called
+   NODEID: 29
+   unique: 112, success, outsize: 160
+unique: 113, opcode: IOCTL (39), nodeid: 29, insize: 72
+   unique: 113, success, outsize: 32
+unique: 114, opcode: RELEASE (18), nodeid: 29, insize: 64
+   unique: 114, success, outsize: 16
+unique: 115, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+getattr /file28
+vfs_getattr called
+   unique: 115, error: -2 (No such file or directory), outsize: 16
+unique: 116, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file28 0100644 umask=0022
+   create[0] flags: 0x8241 /file28
+getattr /file28
+vfs_getattr called
+   NODEID: 30
+   unique: 116, success, outsize: 160
+unique: 117, opcode: IOCTL (39), nodeid: 30, insize: 72
+   unique: 117, success, outsize: 32
+unique: 118, opcode: RELEASE (18), nodeid: 30, insize: 64
+   unique: 118, success, outsize: 16
+unique: 119, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+getattr /file29
+vfs_getattr called
+   unique: 119, error: -2 (No such file or directory), outsize: 16
+unique: 120, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file29 0100644 umask=0022
+   create[0] flags: 0x8241 /file29
+getattr /file29
+vfs_getattr called
+   NODEID: 31
+   unique: 120, success, outsize: 160
+unique: 121, opcode: IOCTL (39), nodeid: 31, insize: 72
+   unique: 121, success, outsize: 32
+unique: 122, opcode: RELEASE (18), nodeid: 31, insize: 64
+   unique: 122, success, outsize: 16
+unique: 123, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+getattr /file30
+vfs_getattr called
+   unique: 123, error: -2 (No such file or directory), outsize: 16
+unique: 124, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file30 0100644 umask=0022
+   create[0] flags: 0x8241 /file30
+getattr /file30
+vfs_getattr called
+   NODEID: 32
+   unique: 124, success, outsize: 160
+unique: 125, opcode: IOCTL (39), nodeid: 32, insize: 72
+   unique: 125, success, outsize: 32
+unique: 126, opcode: RELEASE (18), nodeid: 32, insize: 64
+   unique: 126, success, outsize: 16
+unique: 127, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+getattr /file31
+vfs_getattr called
+   unique: 127, error: -2 (No such file or directory), outsize: 16
+unique: 128, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file31 0100644 umask=0022
+   create[0] flags: 0x8241 /file31
+getattr /file31
+vfs_getattr called
+   NODEID: 33
+   unique: 128, success, outsize: 160
+unique: 129, opcode: IOCTL (39), nodeid: 33, insize: 72
+   unique: 129, success, outsize: 32
+unique: 130, opcode: RELEASE (18), nodeid: 33, insize: 64
+   unique: 130, success, outsize: 16
+unique: 131, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+getattr /file32
+vfs_getattr called
+   unique: 131, error: -2 (No such file or directory), outsize: 16
+unique: 132, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file32 0100644 umask=0022
+   create[0] flags: 0x8241 /file32
+getattr /file32
+vfs_getattr called
+   NODEID: 34
+   unique: 132, success, outsize: 160
+unique: 133, opcode: IOCTL (39), nodeid: 34, insize: 72
+   unique: 133, success, outsize: 32
+unique: 134, opcode: RELEASE (18), nodeid: 34, insize: 64
+   unique: 134, success, outsize: 16
+unique: 135, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+getattr /file33
+vfs_getattr called
+   unique: 135, error: -2 (No such file or directory), outsize: 16
+unique: 136, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file33 0100644 umask=0022
+   create[0] flags: 0x8241 /file33
+getattr /file33
+vfs_getattr called
+   NODEID: 35
+   unique: 136, success, outsize: 160
+unique: 137, opcode: IOCTL (39), nodeid: 35, insize: 72
+   unique: 137, success, outsize: 32
+unique: 138, opcode: RELEASE (18), nodeid: 35, insize: 64
+   unique: 138, success, outsize: 16
+unique: 139, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+getattr /file34
+vfs_getattr called
+   unique: 139, error: -2 (No such file or directory), outsize: 16
+unique: 140, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file34 0100644 umask=0022
+   create[0] flags: 0x8241 /file34
+getattr /file34
+vfs_getattr called
+   NODEID: 36
+   unique: 140, success, outsize: 160
+unique: 141, opcode: IOCTL (39), nodeid: 36, insize: 72
+   unique: 141, success, outsize: 32
+unique: 142, opcode: RELEASE (18), nodeid: 36, insize: 64
+   unique: 142, success, outsize: 16
+unique: 143, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+getattr /file35
+vfs_getattr called
+   unique: 143, error: -2 (No such file or directory), outsize: 16
+unique: 144, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file35 0100644 umask=0022
+   create[0] flags: 0x8241 /file35
+getattr /file35
+vfs_getattr called
+   NODEID: 37
+   unique: 144, success, outsize: 160
+unique: 145, opcode: IOCTL (39), nodeid: 37, insize: 72
+   unique: 145, success, outsize: 32
+unique: 146, opcode: RELEASE (18), nodeid: 37, insize: 64
+   unique: 146, success, outsize: 16
+unique: 147, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+getattr /file36
+vfs_getattr called
+   unique: 147, error: -2 (No such file or directory), outsize: 16
+unique: 148, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file36 0100644 umask=0022
+   create[0] flags: 0x8241 /file36
+getattr /file36
+vfs_getattr called
+   NODEID: 38
+   unique: 148, success, outsize: 160
+unique: 149, opcode: IOCTL (39), nodeid: 38, insize: 72
+   unique: 149, success, outsize: 32
+unique: 150, opcode: RELEASE (18), nodeid: 38, insize: 64
+   unique: 150, success, outsize: 16
+unique: 151, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+getattr /file37
+vfs_getattr called
+   unique: 151, error: -2 (No such file or directory), outsize: 16
+unique: 152, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file37 0100644 umask=0022
+   create[0] flags: 0x8241 /file37
+getattr /file37
+vfs_getattr called
+   NODEID: 39
+   unique: 152, success, outsize: 160
+unique: 153, opcode: IOCTL (39), nodeid: 39, insize: 72
+   unique: 153, success, outsize: 32
+unique: 154, opcode: RELEASE (18), nodeid: 39, insize: 64
+   unique: 154, success, outsize: 16
+unique: 155, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+getattr /file38
+vfs_getattr called
+   unique: 155, error: -2 (No such file or directory), outsize: 16
+unique: 156, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file38 0100644 umask=0022
+   create[0] flags: 0x8241 /file38
+getattr /file38
+vfs_getattr called
+   NODEID: 40
+   unique: 156, success, outsize: 160
+unique: 157, opcode: IOCTL (39), nodeid: 40, insize: 72
+   unique: 157, success, outsize: 32
+unique: 158, opcode: RELEASE (18), nodeid: 40, insize: 64
+   unique: 158, success, outsize: 16
+unique: 159, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+getattr /file39
+vfs_getattr called
+   unique: 159, error: -2 (No such file or directory), outsize: 16
+unique: 160, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file39 0100644 umask=0022
+   create[0] flags: 0x8241 /file39
+getattr /file39
+vfs_getattr called
+   NODEID: 41
+   unique: 160, success, outsize: 160
+unique: 161, opcode: IOCTL (39), nodeid: 41, insize: 72
+   unique: 161, success, outsize: 32
+unique: 162, opcode: RELEASE (18), nodeid: 41, insize: 64
+   unique: 162, success, outsize: 16
+unique: 163, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+getattr /file40
+vfs_getattr called
+   unique: 163, error: -2 (No such file or directory), outsize: 16
+unique: 164, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file40 0100644 umask=0022
+   create[0] flags: 0x8241 /file40
+getattr /file40
+vfs_getattr called
+   NODEID: 42
+   unique: 164, success, outsize: 160
+unique: 165, opcode: IOCTL (39), nodeid: 42, insize: 72
+   unique: 165, success, outsize: 32
+unique: 166, opcode: RELEASE (18), nodeid: 42, insize: 64
+   unique: 166, success, outsize: 16
+unique: 167, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+getattr /file41
+vfs_getattr called
+   unique: 167, error: -2 (No such file or directory), outsize: 16
+unique: 168, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file41 0100644 umask=0022
+   create[0] flags: 0x8241 /file41
+getattr /file41
+vfs_getattr called
+   NODEID: 43
+   unique: 168, success, outsize: 160
+unique: 169, opcode: IOCTL (39), nodeid: 43, insize: 72
+   unique: 169, success, outsize: 32
+unique: 170, opcode: RELEASE (18), nodeid: 43, insize: 64
+   unique: 170, success, outsize: 16
+unique: 171, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+getattr /file42
+vfs_getattr called
+   unique: 171, error: -2 (No such file or directory), outsize: 16
+unique: 172, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file42 0100644 umask=0022
+   create[0] flags: 0x8241 /file42
+getattr /file42
+vfs_getattr called
+   NODEID: 44
+   unique: 172, success, outsize: 160
+unique: 173, opcode: IOCTL (39), nodeid: 44, insize: 72
+   unique: 173, success, outsize: 32
+unique: 174, opcode: RELEASE (18), nodeid: 44, insize: 64
+   unique: 174, success, outsize: 16
+unique: 175, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+getattr /file43
+vfs_getattr called
+   unique: 175, error: -2 (No such file or directory), outsize: 16
+unique: 176, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file43 0100644 umask=0022
+   create[0] flags: 0x8241 /file43
+getattr /file43
+vfs_getattr called
+   NODEID: 45
+   unique: 176, success, outsize: 160
+unique: 177, opcode: IOCTL (39), nodeid: 45, insize: 72
+   unique: 177, success, outsize: 32
+unique: 178, opcode: RELEASE (18), nodeid: 45, insize: 64
+   unique: 178, success, outsize: 16
+unique: 179, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+getattr /file44
+vfs_getattr called
+   unique: 179, error: -2 (No such file or directory), outsize: 16
+unique: 180, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file44 0100644 umask=0022
+   create[0] flags: 0x8241 /file44
+getattr /file44
+vfs_getattr called
+   NODEID: 46
+   unique: 180, success, outsize: 160
+unique: 181, opcode: IOCTL (39), nodeid: 46, insize: 72
+   unique: 181, success, outsize: 32
+unique: 182, opcode: RELEASE (18), nodeid: 46, insize: 64
+   unique: 182, success, outsize: 16
+unique: 183, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+getattr /file45
+vfs_getattr called
+   unique: 183, error: -2 (No such file or directory), outsize: 16
+unique: 184, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file45 0100644 umask=0022
+   create[0] flags: 0x8241 /file45
+getattr /file45
+vfs_getattr called
+   NODEID: 47
+   unique: 184, success, outsize: 160
+unique: 185, opcode: IOCTL (39), nodeid: 47, insize: 72
+   unique: 185, success, outsize: 32
+unique: 186, opcode: RELEASE (18), nodeid: 47, insize: 64
+   unique: 186, success, outsize: 16
+unique: 187, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+getattr /file46
+vfs_getattr called
+   unique: 187, error: -2 (No such file or directory), outsize: 16
+unique: 188, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file46 0100644 umask=0022
+   create[0] flags: 0x8241 /file46
+getattr /file46
+vfs_getattr called
+   NODEID: 48
+   unique: 188, success, outsize: 160
+unique: 189, opcode: IOCTL (39), nodeid: 48, insize: 72
+   unique: 189, success, outsize: 32
+unique: 190, opcode: RELEASE (18), nodeid: 48, insize: 64
+   unique: 190, success, outsize: 16
+unique: 191, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+getattr /file47
+vfs_getattr called
+   unique: 191, error: -2 (No such file or directory), outsize: 16
+unique: 192, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file47 0100644 umask=0022
+   create[0] flags: 0x8241 /file47
+getattr /file47
+vfs_getattr called
+   NODEID: 49
+   unique: 192, success, outsize: 160
+unique: 193, opcode: IOCTL (39), nodeid: 49, insize: 72
+   unique: 193, success, outsize: 32
+unique: 194, opcode: RELEASE (18), nodeid: 49, insize: 64
+   unique: 194, success, outsize: 16
+unique: 195, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+getattr /file48
+vfs_getattr called
+   unique: 195, error: -2 (No such file or directory), outsize: 16
+unique: 196, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file48 0100644 umask=0022
+   create[0] flags: 0x8241 /file48
+getattr /file48
+vfs_getattr called
+   NODEID: 50
+   unique: 196, success, outsize: 160
+unique: 197, opcode: IOCTL (39), nodeid: 50, insize: 72
+   unique: 197, success, outsize: 32
+unique: 198, opcode: RELEASE (18), nodeid: 50, insize: 64
+   unique: 198, success, outsize: 16
+unique: 199, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+getattr /file49
+vfs_getattr called
+   unique: 199, error: -2 (No such file or directory), outsize: 16
+unique: 200, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file49 0100644 umask=0022
+   create[0] flags: 0x8241 /file49
+getattr /file49
+vfs_getattr called
+   NODEID: 51
+   unique: 200, success, outsize: 160
+unique: 201, opcode: IOCTL (39), nodeid: 51, insize: 72
+   unique: 201, success, outsize: 32
+unique: 202, opcode: RELEASE (18), nodeid: 51, insize: 64
+   unique: 202, success, outsize: 16
+unique: 203, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+getattr /file50
+vfs_getattr called
+   unique: 203, error: -2 (No such file or directory), outsize: 16
+unique: 204, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file50 0100644 umask=0022
+   create[0] flags: 0x8241 /file50
+getattr /file50
+vfs_getattr called
+   NODEID: 52
+   unique: 204, success, outsize: 160
+unique: 205, opcode: IOCTL (39), nodeid: 52, insize: 72
+   unique: 205, success, outsize: 32
+unique: 206, opcode: RELEASE (18), nodeid: 52, insize: 64
+   unique: 206, success, outsize: 16
+unique: 207, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+getattr /file51
+vfs_getattr called
+   unique: 207, error: -2 (No such file or directory), outsize: 16
+unique: 208, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file51 0100644 umask=0022
+   create[0] flags: 0x8241 /file51
+getattr /file51
+vfs_getattr called
+   NODEID: 53
+   unique: 208, success, outsize: 160
+unique: 209, opcode: IOCTL (39), nodeid: 53, insize: 72
+   unique: 209, success, outsize: 32
+unique: 210, opcode: RELEASE (18), nodeid: 53, insize: 64
+   unique: 210, success, outsize: 16
+unique: 211, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+getattr /file52
+vfs_getattr called
+   unique: 211, error: -2 (No such file or directory), outsize: 16
+unique: 212, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file52 0100644 umask=0022
+   create[0] flags: 0x8241 /file52
+getattr /file52
+vfs_getattr called
+   NODEID: 54
+   unique: 212, success, outsize: 160
+unique: 213, opcode: IOCTL (39), nodeid: 54, insize: 72
+   unique: 213, success, outsize: 32
+unique: 214, opcode: RELEASE (18), nodeid: 54, insize: 64
+   unique: 214, success, outsize: 16
+unique: 215, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+getattr /file53
+vfs_getattr called
+   unique: 215, error: -2 (No such file or directory), outsize: 16
+unique: 216, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file53 0100644 umask=0022
+   create[0] flags: 0x8241 /file53
+getattr /file53
+vfs_getattr called
+   NODEID: 55
+   unique: 216, success, outsize: 160
+unique: 217, opcode: IOCTL (39), nodeid: 55, insize: 72
+   unique: 217, success, outsize: 32
+unique: 218, opcode: RELEASE (18), nodeid: 55, insize: 64
+   unique: 218, success, outsize: 16
+unique: 219, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+getattr /file54
+vfs_getattr called
+   unique: 219, error: -2 (No such file or directory), outsize: 16
+unique: 220, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file54 0100644 umask=0022
+   create[0] flags: 0x8241 /file54
+getattr /file54
+vfs_getattr called
+   NODEID: 56
+   unique: 220, success, outsize: 160
+unique: 221, opcode: IOCTL (39), nodeid: 56, insize: 72
+   unique: 221, success, outsize: 32
+unique: 222, opcode: RELEASE (18), nodeid: 56, insize: 64
+   unique: 222, success, outsize: 16
+unique: 223, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+getattr /file55
+vfs_getattr called
+   unique: 223, error: -2 (No such file or directory), outsize: 16
+unique: 224, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file55 0100644 umask=0022
+   create[0] flags: 0x8241 /file55
+getattr /file55
+vfs_getattr called
+   NODEID: 57
+   unique: 224, success, outsize: 160
+unique: 225, opcode: IOCTL (39), nodeid: 57, insize: 72
+   unique: 225, success, outsize: 32
+unique: 226, opcode: RELEASE (18), nodeid: 57, insize: 64
+   unique: 226, success, outsize: 16
+unique: 227, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+getattr /file56
+vfs_getattr called
+   unique: 227, error: -2 (No such file or directory), outsize: 16
+unique: 228, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file56 0100644 umask=0022
+   create[0] flags: 0x8241 /file56
+getattr /file56
+vfs_getattr called
+   NODEID: 58
+   unique: 228, success, outsize: 160
+unique: 229, opcode: IOCTL (39), nodeid: 58, insize: 72
+   unique: 229, success, outsize: 32
+unique: 230, opcode: RELEASE (18), nodeid: 58, insize: 64
+   unique: 230, success, outsize: 16
+unique: 231, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+getattr /file57
+vfs_getattr called
+   unique: 231, error: -2 (No such file or directory), outsize: 16
+unique: 232, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file57 0100644 umask=0022
+   create[0] flags: 0x8241 /file57
+getattr /file57
+vfs_getattr called
+   NODEID: 59
+   unique: 232, success, outsize: 160
+unique: 233, opcode: IOCTL (39), nodeid: 59, insize: 72
+   unique: 233, success, outsize: 32
+unique: 234, opcode: RELEASE (18), nodeid: 59, insize: 64
+   unique: 234, success, outsize: 16
+unique: 235, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+getattr /file58
+vfs_getattr called
+   unique: 235, error: -2 (No such file or directory), outsize: 16
+unique: 236, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file58 0100644 umask=0022
+   create[0] flags: 0x8241 /file58
+getattr /file58
+vfs_getattr called
+   NODEID: 60
+   unique: 236, success, outsize: 160
+unique: 237, opcode: IOCTL (39), nodeid: 60, insize: 72
+   unique: 237, success, outsize: 32
+unique: 238, opcode: RELEASE (18), nodeid: 60, insize: 64
+   unique: 238, success, outsize: 16
+unique: 239, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+getattr /file59
+vfs_getattr called
+   unique: 239, error: -2 (No such file or directory), outsize: 16
+unique: 240, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file59 0100644 umask=0022
+   create[0] flags: 0x8241 /file59
+getattr /file59
+vfs_getattr called
+   NODEID: 61
+   unique: 240, success, outsize: 160
+unique: 241, opcode: IOCTL (39), nodeid: 61, insize: 72
+   unique: 241, success, outsize: 32
+unique: 242, opcode: RELEASE (18), nodeid: 61, insize: 64
+   unique: 242, success, outsize: 16
+unique: 243, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+getattr /file60
+vfs_getattr called
+   unique: 243, error: -2 (No such file or directory), outsize: 16
+unique: 244, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file60 0100644 umask=0022
+   create[0] flags: 0x8241 /file60
+getattr /file60
+vfs_getattr called
+   NODEID: 62
+   unique: 244, success, outsize: 160
+unique: 245, opcode: IOCTL (39), nodeid: 62, insize: 72
+   unique: 245, success, outsize: 32
+unique: 246, opcode: RELEASE (18), nodeid: 62, insize: 64
+   unique: 246, success, outsize: 16
+unique: 247, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+getattr /file61
+vfs_getattr called
+   unique: 247, error: -2 (No such file or directory), outsize: 16
+unique: 248, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file61 0100644 umask=0022
+   create[0] flags: 0x8241 /file61
+getattr /file61
+vfs_getattr called
+   NODEID: 63
+   unique: 248, success, outsize: 160
+unique: 249, opcode: IOCTL (39), nodeid: 63, insize: 72
+   unique: 249, success, outsize: 32
+unique: 250, opcode: RELEASE (18), nodeid: 63, insize: 64
+   unique: 250, success, outsize: 16
+unique: 251, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+getattr /file62
+vfs_getattr called
+   unique: 251, error: -2 (No such file or directory), outsize: 16
+unique: 252, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file62 0100644 umask=0022
+   create[0] flags: 0x8241 /file62
+getattr /file62
+vfs_getattr called
+   NODEID: 64
+   unique: 252, success, outsize: 160
+unique: 253, opcode: IOCTL (39), nodeid: 64, insize: 72
+   unique: 253, success, outsize: 32
+unique: 254, opcode: RELEASE (18), nodeid: 64, insize: 64
+   unique: 254, success, outsize: 16
+unique: 255, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+getattr /file63
+vfs_getattr called
+   unique: 255, error: -2 (No such file or directory), outsize: 16
+unique: 256, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file63 0100644 umask=0022
+   create[0] flags: 0x8241 /file63
+getattr /file63
+vfs_getattr called
+   NODEID: 65
+   unique: 256, success, outsize: 160
+unique: 257, opcode: IOCTL (39), nodeid: 65, insize: 72
+   unique: 257, success, outsize: 32
+unique: 258, opcode: RELEASE (18), nodeid: 65, insize: 64
+   unique: 258, success, outsize: 16
+unique: 259, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+getattr /file64
+vfs_getattr called
+   unique: 259, error: -2 (No such file or directory), outsize: 16
+unique: 260, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file64 0100644 umask=0022
+   create[0] flags: 0x8241 /file64
+getattr /file64
+vfs_getattr called
+   NODEID: 66
+   unique: 260, success, outsize: 160
+unique: 261, opcode: IOCTL (39), nodeid: 66, insize: 72
+   unique: 261, success, outsize: 32
+unique: 262, opcode: RELEASE (18), nodeid: 66, insize: 64
+   unique: 262, success, outsize: 16
+unique: 263, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+getattr /file65
+vfs_getattr called
+   unique: 263, error: -2 (No such file or directory), outsize: 16
+unique: 264, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file65 0100644 umask=0022
+   create[0] flags: 0x8241 /file65
+getattr /file65
+vfs_getattr called
+   NODEID: 67
+   unique: 264, success, outsize: 160
+unique: 265, opcode: IOCTL (39), nodeid: 67, insize: 72
+   unique: 265, success, outsize: 32
+unique: 266, opcode: RELEASE (18), nodeid: 67, insize: 64
+   unique: 266, success, outsize: 16
+unique: 267, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+getattr /file66
+vfs_getattr called
+   unique: 267, error: -2 (No such file or directory), outsize: 16
+unique: 268, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file66 0100644 umask=0022
+   create[0] flags: 0x8241 /file66
+getattr /file66
+vfs_getattr called
+   NODEID: 68
+   unique: 268, success, outsize: 160
+unique: 269, opcode: IOCTL (39), nodeid: 68, insize: 72
+   unique: 269, success, outsize: 32
+unique: 270, opcode: RELEASE (18), nodeid: 68, insize: 64
+   unique: 270, success, outsize: 16
+unique: 271, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+getattr /file67
+vfs_getattr called
+   unique: 271, error: -2 (No such file or directory), outsize: 16
+unique: 272, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file67 0100644 umask=0022
+   create[0] flags: 0x8241 /file67
+getattr /file67
+vfs_getattr called
+   NODEID: 69
+   unique: 272, success, outsize: 160
+unique: 273, opcode: IOCTL (39), nodeid: 69, insize: 72
+   unique: 273, success, outsize: 32
+unique: 274, opcode: RELEASE (18), nodeid: 69, insize: 64
+   unique: 274, success, outsize: 16
+unique: 275, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+getattr /file68
+vfs_getattr called
+   unique: 275, error: -2 (No such file or directory), outsize: 16
+unique: 276, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file68 0100644 umask=0022
+   create[0] flags: 0x8241 /file68
+getattr /file68
+vfs_getattr called
+   NODEID: 70
+   unique: 276, success, outsize: 160
+unique: 277, opcode: IOCTL (39), nodeid: 70, insize: 72
+   unique: 277, success, outsize: 32
+unique: 278, opcode: RELEASE (18), nodeid: 70, insize: 64
+   unique: 278, success, outsize: 16
+unique: 279, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+getattr /file69
+vfs_getattr called
+   unique: 279, error: -2 (No such file or directory), outsize: 16
+unique: 280, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file69 0100644 umask=0022
+   create[0] flags: 0x8241 /file69
+getattr /file69
+vfs_getattr called
+   NODEID: 71
+   unique: 280, success, outsize: 160
+unique: 281, opcode: IOCTL (39), nodeid: 71, insize: 72
+   unique: 281, success, outsize: 32
+unique: 282, opcode: RELEASE (18), nodeid: 71, insize: 64
+   unique: 282, success, outsize: 16
+unique: 283, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+getattr /file70
+vfs_getattr called
+   unique: 283, error: -2 (No such file or directory), outsize: 16
+unique: 284, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file70 0100644 umask=0022
+   create[0] flags: 0x8241 /file70
+getattr /file70
+vfs_getattr called
+   NODEID: 72
+   unique: 284, success, outsize: 160
+unique: 285, opcode: IOCTL (39), nodeid: 72, insize: 72
+   unique: 285, success, outsize: 32
+unique: 286, opcode: RELEASE (18), nodeid: 72, insize: 64
+   unique: 286, success, outsize: 16
+unique: 287, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+getattr /file71
+vfs_getattr called
+   unique: 287, error: -2 (No such file or directory), outsize: 16
+unique: 288, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file71 0100644 umask=0022
+   create[0] flags: 0x8241 /file71
+getattr /file71
+vfs_getattr called
+   NODEID: 73
+   unique: 288, success, outsize: 160
+unique: 289, opcode: IOCTL (39), nodeid: 73, insize: 72
+   unique: 289, success, outsize: 32
+unique: 290, opcode: RELEASE (18), nodeid: 73, insize: 64
+   unique: 290, success, outsize: 16
+unique: 291, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+getattr /file72
+vfs_getattr called
+   unique: 291, error: -2 (No such file or directory), outsize: 16
+unique: 292, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file72 0100644 umask=0022
+   create[0] flags: 0x8241 /file72
+getattr /file72
+vfs_getattr called
+   NODEID: 74
+   unique: 292, success, outsize: 160
+unique: 293, opcode: IOCTL (39), nodeid: 74, insize: 72
+   unique: 293, success, outsize: 32
+unique: 294, opcode: RELEASE (18), nodeid: 74, insize: 64
+   unique: 294, success, outsize: 16
+unique: 295, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+getattr /file73
+vfs_getattr called
+   unique: 295, error: -2 (No such file or directory), outsize: 16
+unique: 296, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file73 0100644 umask=0022
+   create[0] flags: 0x8241 /file73
+getattr /file73
+vfs_getattr called
+   NODEID: 75
+   unique: 296, success, outsize: 160
+unique: 297, opcode: IOCTL (39), nodeid: 75, insize: 72
+   unique: 297, success, outsize: 32
+unique: 298, opcode: RELEASE (18), nodeid: 75, insize: 64
+   unique: 298, success, outsize: 16
+unique: 299, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+getattr /file74
+vfs_getattr called
+   unique: 299, error: -2 (No such file or directory), outsize: 16
+unique: 300, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file74 0100644 umask=0022
+   create[0] flags: 0x8241 /file74
+getattr /file74
+vfs_getattr called
+   NODEID: 76
+   unique: 300, success, outsize: 160
+unique: 301, opcode: IOCTL (39), nodeid: 76, insize: 72
+   unique: 301, success, outsize: 32
+unique: 302, opcode: RELEASE (18), nodeid: 76, insize: 64
+   unique: 302, success, outsize: 16
+unique: 303, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+getattr /file75
+vfs_getattr called
+   unique: 303, error: -2 (No such file or directory), outsize: 16
+unique: 304, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file75 0100644 umask=0022
+   create[0] flags: 0x8241 /file75
+getattr /file75
+vfs_getattr called
+   NODEID: 77
+   unique: 304, success, outsize: 160
+unique: 305, opcode: IOCTL (39), nodeid: 77, insize: 72
+   unique: 305, success, outsize: 32
+unique: 306, opcode: RELEASE (18), nodeid: 77, insize: 64
+   unique: 306, success, outsize: 16
+unique: 307, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+getattr /file76
+vfs_getattr called
+   unique: 307, error: -2 (No such file or directory), outsize: 16
+unique: 308, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file76 0100644 umask=0022
+   create[0] flags: 0x8241 /file76
+getattr /file76
+vfs_getattr called
+   NODEID: 78
+   unique: 308, success, outsize: 160
+unique: 309, opcode: IOCTL (39), nodeid: 78, insize: 72
+   unique: 309, success, outsize: 32
+unique: 310, opcode: RELEASE (18), nodeid: 78, insize: 64
+   unique: 310, success, outsize: 16
+unique: 311, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+getattr /file77
+vfs_getattr called
+   unique: 311, error: -2 (No such file or directory), outsize: 16
+unique: 312, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file77 0100644 umask=0022
+   create[0] flags: 0x8241 /file77
+getattr /file77
+vfs_getattr called
+   NODEID: 79
+   unique: 312, success, outsize: 160
+unique: 313, opcode: IOCTL (39), nodeid: 79, insize: 72
+   unique: 313, success, outsize: 32
+unique: 314, opcode: RELEASE (18), nodeid: 79, insize: 64
+   unique: 314, success, outsize: 16
+unique: 315, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+getattr /file78
+vfs_getattr called
+   unique: 315, error: -2 (No such file or directory), outsize: 16
+unique: 316, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file78 0100644 umask=0022
+   create[0] flags: 0x8241 /file78
+getattr /file78
+vfs_getattr called
+   NODEID: 80
+   unique: 316, success, outsize: 160
+unique: 317, opcode: IOCTL (39), nodeid: 80, insize: 72
+   unique: 317, success, outsize: 32
+unique: 318, opcode: RELEASE (18), nodeid: 80, insize: 64
+   unique: 318, success, outsize: 16
+unique: 319, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+getattr /file79
+vfs_getattr called
+   unique: 319, error: -2 (No such file or directory), outsize: 16
+unique: 320, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file79 0100644 umask=0022
+   create[0] flags: 0x8241 /file79
+getattr /file79
+vfs_getattr called
+   NODEID: 81
+   unique: 320, success, outsize: 160
+unique: 321, opcode: IOCTL (39), nodeid: 81, insize: 72
+   unique: 321, success, outsize: 32
+unique: 322, opcode: RELEASE (18), nodeid: 81, insize: 64
+   unique: 322, success, outsize: 16
+unique: 323, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+getattr /file80
+vfs_getattr called
+   unique: 323, error: -2 (No such file or directory), outsize: 16
+unique: 324, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file80 0100644 umask=0022
+   create[0] flags: 0x8241 /file80
+getattr /file80
+vfs_getattr called
+   NODEID: 82
+   unique: 324, success, outsize: 160
+unique: 325, opcode: IOCTL (39), nodeid: 82, insize: 72
+   unique: 325, success, outsize: 32
+unique: 326, opcode: RELEASE (18), nodeid: 82, insize: 64
+   unique: 326, success, outsize: 16
+unique: 327, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+getattr /file81
+vfs_getattr called
+   unique: 327, error: -2 (No such file or directory), outsize: 16
+unique: 328, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file81 0100644 umask=0022
+   create[0] flags: 0x8241 /file81
+getattr /file81
+vfs_getattr called
+   NODEID: 83
+   unique: 328, success, outsize: 160
+unique: 329, opcode: IOCTL (39), nodeid: 83, insize: 72
+   unique: 329, success, outsize: 32
+unique: 330, opcode: RELEASE (18), nodeid: 83, insize: 64
+   unique: 330, success, outsize: 16
+unique: 331, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+getattr /file82
+vfs_getattr called
+   unique: 331, error: -2 (No such file or directory), outsize: 16
+unique: 332, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file82 0100644 umask=0022
+   create[0] flags: 0x8241 /file82
+getattr /file82
+vfs_getattr called
+   NODEID: 84
+   unique: 332, success, outsize: 160
+unique: 333, opcode: IOCTL (39), nodeid: 84, insize: 72
+   unique: 333, success, outsize: 32
+unique: 334, opcode: RELEASE (18), nodeid: 84, insize: 64
+   unique: 334, success, outsize: 16
+unique: 335, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+getattr /file83
+vfs_getattr called
+   unique: 335, error: -2 (No such file or directory), outsize: 16
+unique: 336, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file83 0100644 umask=0022
+   create[0] flags: 0x8241 /file83
+getattr /file83
+vfs_getattr called
+   NODEID: 85
+   unique: 336, success, outsize: 160
+unique: 337, opcode: IOCTL (39), nodeid: 85, insize: 72
+   unique: 337, success, outsize: 32
+unique: 338, opcode: RELEASE (18), nodeid: 85, insize: 64
+   unique: 338, success, outsize: 16
+unique: 339, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+getattr /file84
+vfs_getattr called
+   unique: 339, error: -2 (No such file or directory), outsize: 16
+unique: 340, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file84 0100644 umask=0022
+   create[0] flags: 0x8241 /file84
+getattr /file84
+vfs_getattr called
+   NODEID: 86
+   unique: 340, success, outsize: 160
+unique: 341, opcode: IOCTL (39), nodeid: 86, insize: 72
+   unique: 341, success, outsize: 32
+unique: 342, opcode: RELEASE (18), nodeid: 86, insize: 64
+   unique: 342, success, outsize: 16
+unique: 343, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+getattr /file85
+vfs_getattr called
+   unique: 343, error: -2 (No such file or directory), outsize: 16
+unique: 344, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file85 0100644 umask=0022
+   create[0] flags: 0x8241 /file85
+getattr /file85
+vfs_getattr called
+   NODEID: 87
+   unique: 344, success, outsize: 160
+unique: 345, opcode: IOCTL (39), nodeid: 87, insize: 72
+   unique: 345, success, outsize: 32
+unique: 346, opcode: RELEASE (18), nodeid: 87, insize: 64
+   unique: 346, success, outsize: 16
+unique: 347, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+getattr /file86
+vfs_getattr called
+   unique: 347, error: -2 (No such file or directory), outsize: 16
+unique: 348, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file86 0100644 umask=0022
+   create[0] flags: 0x8241 /file86
+getattr /file86
+vfs_getattr called
+   NODEID: 88
+   unique: 348, success, outsize: 160
+unique: 349, opcode: IOCTL (39), nodeid: 88, insize: 72
+   unique: 349, success, outsize: 32
+unique: 350, opcode: RELEASE (18), nodeid: 88, insize: 64
+   unique: 350, success, outsize: 16
+unique: 351, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+getattr /file87
+vfs_getattr called
+   unique: 351, error: -2 (No such file or directory), outsize: 16
+unique: 352, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file87 0100644 umask=0022
+   create[0] flags: 0x8241 /file87
+getattr /file87
+vfs_getattr called
+   NODEID: 89
+   unique: 352, success, outsize: 160
+unique: 353, opcode: IOCTL (39), nodeid: 89, insize: 72
+   unique: 353, success, outsize: 32
+unique: 354, opcode: RELEASE (18), nodeid: 89, insize: 64
+   unique: 354, success, outsize: 16
+unique: 355, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+getattr /file88
+vfs_getattr called
+   unique: 355, error: -2 (No such file or directory), outsize: 16
+unique: 356, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file88 0100644 umask=0022
+   create[0] flags: 0x8241 /file88
+getattr /file88
+vfs_getattr called
+   NODEID: 90
+   unique: 356, success, outsize: 160
+unique: 357, opcode: IOCTL (39), nodeid: 90, insize: 72
+   unique: 357, success, outsize: 32
+unique: 358, opcode: RELEASE (18), nodeid: 90, insize: 64
+   unique: 358, success, outsize: 16
+unique: 359, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+getattr /file89
+vfs_getattr called
+   unique: 359, error: -2 (No such file or directory), outsize: 16
+unique: 360, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file89 0100644 umask=0022
+   create[0] flags: 0x8241 /file89
+getattr /file89
+vfs_getattr called
+   NODEID: 91
+   unique: 360, success, outsize: 160
+unique: 361, opcode: IOCTL (39), nodeid: 91, insize: 72
+   unique: 361, success, outsize: 32
+unique: 362, opcode: RELEASE (18), nodeid: 91, insize: 64
+   unique: 362, success, outsize: 16
+unique: 363, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+getattr /file90
+vfs_getattr called
+   unique: 363, error: -2 (No such file or directory), outsize: 16
+unique: 364, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file90 0100644 umask=0022
+   create[0] flags: 0x8241 /file90
+getattr /file90
+vfs_getattr called
+   NODEID: 92
+   unique: 364, success, outsize: 160
+unique: 365, opcode: IOCTL (39), nodeid: 92, insize: 72
+   unique: 365, success, outsize: 32
+unique: 366, opcode: RELEASE (18), nodeid: 92, insize: 64
+   unique: 366, success, outsize: 16
+unique: 367, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+getattr /file91
+vfs_getattr called
+   unique: 367, error: -2 (No such file or directory), outsize: 16
+unique: 368, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file91 0100644 umask=0022
+   create[0] flags: 0x8241 /file91
+getattr /file91
+vfs_getattr called
+   NODEID: 93
+   unique: 368, success, outsize: 160
+unique: 369, opcode: IOCTL (39), nodeid: 93, insize: 72
+   unique: 369, success, outsize: 32
+unique: 370, opcode: RELEASE (18), nodeid: 93, insize: 64
+   unique: 370, success, outsize: 16
+unique: 371, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+getattr /file92
+vfs_getattr called
+   unique: 371, error: -2 (No such file or directory), outsize: 16
+unique: 372, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file92 0100644 umask=0022
+   create[0] flags: 0x8241 /file92
+getattr /file92
+vfs_getattr called
+   NODEID: 94
+   unique: 372, success, outsize: 160
+unique: 373, opcode: IOCTL (39), nodeid: 94, insize: 72
+   unique: 373, success, outsize: 32
+unique: 374, opcode: RELEASE (18), nodeid: 94, insize: 64
+   unique: 374, success, outsize: 16
+unique: 375, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+getattr /file93
+vfs_getattr called
+   unique: 375, error: -2 (No such file or directory), outsize: 16
+unique: 376, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file93 0100644 umask=0022
+   create[0] flags: 0x8241 /file93
+getattr /file93
+vfs_getattr called
+   NODEID: 95
+   unique: 376, success, outsize: 160
+unique: 377, opcode: IOCTL (39), nodeid: 95, insize: 72
+   unique: 377, success, outsize: 32
+unique: 378, opcode: RELEASE (18), nodeid: 95, insize: 64
+   unique: 378, success, outsize: 16
+unique: 379, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+getattr /file94
+vfs_getattr called
+   unique: 379, error: -2 (No such file or directory), outsize: 16
+unique: 380, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file94 0100644 umask=0022
+   create[0] flags: 0x8241 /file94
+getattr /file94
+vfs_getattr called
+   NODEID: 96
+   unique: 380, success, outsize: 160
+unique: 381, opcode: IOCTL (39), nodeid: 96, insize: 72
+   unique: 381, success, outsize: 32
+unique: 382, opcode: RELEASE (18), nodeid: 96, insize: 64
+   unique: 382, success, outsize: 16
+unique: 383, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+getattr /file95
+vfs_getattr called
+   unique: 383, error: -2 (No such file or directory), outsize: 16
+unique: 384, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file95 0100644 umask=0022
+   create[0] flags: 0x8241 /file95
+getattr /file95
+vfs_getattr called
+   NODEID: 97
+   unique: 384, success, outsize: 160
+unique: 385, opcode: IOCTL (39), nodeid: 97, insize: 72
+   unique: 385, success, outsize: 32
+unique: 386, opcode: RELEASE (18), nodeid: 97, insize: 64
+   unique: 386, success, outsize: 16
+unique: 387, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+getattr /file96
+vfs_getattr called
+   unique: 387, error: -2 (No such file or directory), outsize: 16
+unique: 388, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file96 0100644 umask=0022
+   create[0] flags: 0x8241 /file96
+getattr /file96
+vfs_getattr called
+   NODEID: 98
+   unique: 388, success, outsize: 160
+unique: 389, opcode: IOCTL (39), nodeid: 98, insize: 72
+   unique: 389, success, outsize: 32
+unique: 390, opcode: RELEASE (18), nodeid: 98, insize: 64
+   unique: 390, success, outsize: 16
+unique: 391, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+getattr /file97
+vfs_getattr called
+   unique: 391, error: -2 (No such file or directory), outsize: 16
+unique: 392, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file97 0100644 umask=0022
+   create[0] flags: 0x8241 /file97
+getattr /file97
+vfs_getattr called
+   NODEID: 99
+   unique: 392, success, outsize: 160
+unique: 393, opcode: IOCTL (39), nodeid: 99, insize: 72
+   unique: 393, success, outsize: 32
+unique: 394, opcode: RELEASE (18), nodeid: 99, insize: 64
+   unique: 394, success, outsize: 16
+unique: 395, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+getattr /file98
+vfs_getattr called
+   unique: 395, error: -2 (No such file or directory), outsize: 16
+unique: 396, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file98 0100644 umask=0022
+   create[0] flags: 0x8241 /file98
+getattr /file98
+vfs_getattr called
+   NODEID: 100
+   unique: 396, success, outsize: 160
+unique: 397, opcode: IOCTL (39), nodeid: 100, insize: 72
+   unique: 397, success, outsize: 32
+unique: 398, opcode: RELEASE (18), nodeid: 100, insize: 64
+   unique: 398, success, outsize: 16
+unique: 399, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+getattr /file99
+vfs_getattr called
+   unique: 399, error: -2 (No such file or directory), outsize: 16
+unique: 400, opcode: CREATE (35), nodeid: 1, insize: 63
+create flags: 0x8241 /file99 0100644 umask=0022
+   create[0] flags: 0x8241 /file99
+getattr /file99
+vfs_getattr called
+   NODEID: 101
+   unique: 400, success, outsize: 160
+unique: 401, opcode: IOCTL (39), nodeid: 101, insize: 72
+   unique: 401, success, outsize: 32
+unique: 402, opcode: RELEASE (18), nodeid: 101, insize: 64
+   unique: 402, success, outsize: 16
+unique: 403, opcode: OPENDIR (27), nodeid: 1, insize: 48
+   unique: 403, success, outsize: 32
+unique: 404, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 0
+   unique: 404, success, outsize: 48
+unique: 405, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 1
+   unique: 405, success, outsize: 48
+unique: 406, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 2
+   unique: 406, success, outsize: 48
+unique: 407, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 3
+   unique: 407, success, outsize: 48
+unique: 408, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 4
+   unique: 408, success, outsize: 48
+unique: 409, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 5
+   unique: 409, success, outsize: 48
+unique: 410, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 6
+   unique: 410, success, outsize: 48
+unique: 411, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 7
+   unique: 411, success, outsize: 48
+unique: 412, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 8
+   unique: 412, success, outsize: 48
+unique: 413, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 9
+   unique: 413, success, outsize: 48
+unique: 414, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 10
+   unique: 414, success, outsize: 48
+unique: 415, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 11
+   unique: 415, success, outsize: 48
+unique: 416, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 12
+   unique: 416, success, outsize: 48
+unique: 417, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 13
+   unique: 417, success, outsize: 48
+unique: 418, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 14
+   unique: 418, success, outsize: 48
+unique: 419, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 15
+   unique: 419, success, outsize: 48
+unique: 420, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 16
+   unique: 420, success, outsize: 48
+unique: 421, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 17
+   unique: 421, success, outsize: 48
+unique: 422, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 18
+   unique: 422, success, outsize: 48
+unique: 423, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 19
+   unique: 423, success, outsize: 48
+unique: 424, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 20
+   unique: 424, success, outsize: 48
+unique: 425, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 21
+   unique: 425, success, outsize: 48
+unique: 426, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 22
+   unique: 426, success, outsize: 48
+unique: 427, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 23
+   unique: 427, success, outsize: 48
+unique: 428, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 24
+   unique: 428, success, outsize: 48
+unique: 429, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 25
+   unique: 429, success, outsize: 48
+unique: 430, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 26
+   unique: 430, success, outsize: 48
+unique: 431, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 27
+   unique: 431, success, outsize: 48
+unique: 432, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 28
+   unique: 432, success, outsize: 48
+unique: 433, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 29
+   unique: 433, success, outsize: 48
+unique: 434, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 30
+   unique: 434, success, outsize: 48
+unique: 435, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 31
+   unique: 435, success, outsize: 48
+unique: 436, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 32
+   unique: 436, success, outsize: 48
+unique: 437, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 33
+   unique: 437, success, outsize: 48
+unique: 438, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 34
+   unique: 438, success, outsize: 48
+unique: 439, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 35
+   unique: 439, success, outsize: 48
+unique: 440, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 36
+   unique: 440, success, outsize: 48
+unique: 441, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 37
+   unique: 441, success, outsize: 48
+unique: 442, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 38
+   unique: 442, success, outsize: 48
+unique: 443, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 39
+   unique: 443, success, outsize: 48
+unique: 444, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 40
+   unique: 444, success, outsize: 48
+unique: 445, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 41
+   unique: 445, success, outsize: 48
+unique: 446, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 42
+   unique: 446, success, outsize: 48
+unique: 447, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 43
+   unique: 447, success, outsize: 48
+unique: 448, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 44
+   unique: 448, success, outsize: 48
+unique: 449, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 45
+   unique: 449, success, outsize: 48
+unique: 450, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 46
+   unique: 450, success, outsize: 48
+unique: 451, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 47
+   unique: 451, success, outsize: 48
+unique: 452, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 48
+   unique: 452, success, outsize: 48
+unique: 453, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 49
+   unique: 453, success, outsize: 48
+unique: 454, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 50
+   unique: 454, success, outsize: 48
+unique: 455, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 51
+   unique: 455, success, outsize: 48
+unique: 456, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 52
+   unique: 456, success, outsize: 48
+unique: 457, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 53
+   unique: 457, success, outsize: 48
+unique: 458, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 54
+   unique: 458, success, outsize: 48
+unique: 459, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 55
+   unique: 459, success, outsize: 48
+unique: 460, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 56
+   unique: 460, success, outsize: 48
+unique: 461, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 57
+   unique: 461, success, outsize: 48
+unique: 462, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 58
+   unique: 462, success, outsize: 48
+unique: 463, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 59
+   unique: 463, success, outsize: 48
+unique: 464, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 60
+   unique: 464, success, outsize: 48
+unique: 465, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 61
+   unique: 465, success, outsize: 48
+unique: 466, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 62
+   unique: 466, success, outsize: 48
+unique: 467, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 63
+   unique: 467, success, outsize: 48
+unique: 468, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 64
+   unique: 468, success, outsize: 48
+unique: 469, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 65
+   unique: 469, success, outsize: 48
+unique: 470, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 66
+   unique: 470, success, outsize: 48
+unique: 471, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 67
+   unique: 471, success, outsize: 48
+unique: 472, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 68
+   unique: 472, success, outsize: 48
+unique: 473, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 69
+   unique: 473, success, outsize: 48
+unique: 474, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 70
+   unique: 474, success, outsize: 48
+unique: 475, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 71
+   unique: 475, success, outsize: 48
+unique: 476, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 72
+   unique: 476, success, outsize: 48
+unique: 477, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 73
+   unique: 477, success, outsize: 48
+unique: 478, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 74
+   unique: 478, success, outsize: 48
+unique: 479, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 75
+   unique: 479, success, outsize: 48
+unique: 480, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 76
+   unique: 480, success, outsize: 48
+unique: 481, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 77
+   unique: 481, success, outsize: 48
+unique: 482, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 78
+   unique: 482, success, outsize: 48
+unique: 483, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 79
+   unique: 483, success, outsize: 48
+unique: 484, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 80
+   unique: 484, success, outsize: 48
+unique: 485, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 81
+   unique: 485, success, outsize: 48
+unique: 486, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 82
+   unique: 486, success, outsize: 48
+unique: 487, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 83
+   unique: 487, success, outsize: 48
+unique: 488, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 84
+   unique: 488, success, outsize: 48
+unique: 489, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 85
+   unique: 489, success, outsize: 48
+unique: 490, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 86
+   unique: 490, success, outsize: 48
+unique: 491, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 87
+   unique: 491, success, outsize: 48
+unique: 492, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 88
+   unique: 492, success, outsize: 48
+unique: 493, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 89
+   unique: 493, success, outsize: 48
+unique: 494, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 90
+   unique: 494, success, outsize: 48
+unique: 495, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 91
+   unique: 495, success, outsize: 48
+unique: 496, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 92
+   unique: 496, success, outsize: 48
+unique: 497, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 93
+   unique: 497, success, outsize: 48
+unique: 498, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 94
+   unique: 498, success, outsize: 48
+unique: 499, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 95
+   unique: 499, success, outsize: 48
+unique: 500, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 96
+   unique: 500, success, outsize: 48
+unique: 501, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 97
+   unique: 501, success, outsize: 48
+unique: 502, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 98
+   unique: 502, success, outsize: 48
+unique: 503, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 99
+   unique: 503, success, outsize: 48
+unique: 504, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 100
+   unique: 504, success, outsize: 16
+unique: 505, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
+   unique: 505, success, outsize: 16
+unique: 506, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file0
+   unique: 506, success, outsize: 16
+unique: 507, opcode: FORGET (2), nodeid: 2, insize: 48
+FORGET 2/1
+DELETE: 2
+unique: 508, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file1
+   unique: 508, success, outsize: 16
+unique: 509, opcode: FORGET (2), nodeid: 3, insize: 48
+FORGET 3/1
+DELETE: 3
+unique: 510, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file2
+   unique: 510, success, outsize: 16
+unique: 511, opcode: FORGET (2), nodeid: 4, insize: 48
+FORGET 4/1
+DELETE: 4
+unique: 512, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file3
+   unique: 512, success, outsize: 16
+unique: 513, opcode: FORGET (2), nodeid: 5, insize: 48
+FORGET 5/1
+DELETE: 5
+unique: 514, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file4
+   unique: 514, success, outsize: 16
+unique: 515, opcode: FORGET (2), nodeid: 6, insize: 48
+FORGET 6/1
+DELETE: 6
+unique: 516, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file5
+   unique: 516, success, outsize: 16
+unique: 517, opcode: FORGET (2), nodeid: 7, insize: 48
+FORGET 7/1
+DELETE: 7
+unique: 518, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file6
+   unique: 518, success, outsize: 16
+unique: 519, opcode: FORGET (2), nodeid: 8, insize: 48
+FORGET 8/1
+DELETE: 8
+unique: 520, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file7
+   unique: 520, success, outsize: 16
+unique: 521, opcode: FORGET (2), nodeid: 9, insize: 48
+FORGET 9/1
+DELETE: 9
+unique: 522, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file8
+   unique: 522, success, outsize: 16
+unique: 523, opcode: FORGET (2), nodeid: 10, insize: 48
+FORGET 10/1
+DELETE: 10
+unique: 524, opcode: UNLINK (10), nodeid: 1, insize: 46
+unlink /file9
+   unique: 524, success, outsize: 16
+unique: 525, opcode: FORGET (2), nodeid: 11, insize: 48
+FORGET 11/1
+DELETE: 11
+unique: 526, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file10
+   unique: 526, success, outsize: 16
+unique: 527, opcode: FORGET (2), nodeid: 12, insize: 48
+FORGET 12/1
+DELETE: 12
+unique: 528, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file11
+   unique: 528, success, outsize: 16
+unique: 529, opcode: FORGET (2), nodeid: 13, insize: 48
+FORGET 13/1
+DELETE: 13
+unique: 530, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file12
+   unique: 530, success, outsize: 16
+unique: 531, opcode: FORGET (2), nodeid: 14, insize: 48
+FORGET 14/1
+DELETE: 14
+unique: 532, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file13
+   unique: 532, success, outsize: 16
+unique: 533, opcode: FORGET (2), nodeid: 15, insize: 48
+FORGET 15/1
+DELETE: 15
+unique: 534, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file14
+   unique: 534, success, outsize: 16
+unique: 535, opcode: FORGET (2), nodeid: 16, insize: 48
+FORGET 16/1
+DELETE: 16
+unique: 536, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file15
+   unique: 536, success, outsize: 16
+unique: 537, opcode: FORGET (2), nodeid: 17, insize: 48
+FORGET 17/1
+DELETE: 17
+unique: 538, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file16
+   unique: 538, success, outsize: 16
+unique: 539, opcode: FORGET (2), nodeid: 18, insize: 48
+FORGET 18/1
+DELETE: 18
+unique: 540, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file17
+   unique: 540, success, outsize: 16
+unique: 541, opcode: FORGET (2), nodeid: 19, insize: 48
+FORGET 19/1
+DELETE: 19
+unique: 542, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file18
+   unique: 542, success, outsize: 16
+unique: 543, opcode: FORGET (2), nodeid: 20, insize: 48
+FORGET 20/1
+DELETE: 20
+unique: 544, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file19
+   unique: 544, success, outsize: 16
+unique: 545, opcode: FORGET (2), nodeid: 21, insize: 48
+FORGET 21/1
+DELETE: 21
+unique: 546, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file20
+   unique: 546, success, outsize: 16
+unique: 547, opcode: FORGET (2), nodeid: 22, insize: 48
+FORGET 22/1
+DELETE: 22
+unique: 548, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file21
+   unique: 548, success, outsize: 16
+unique: 549, opcode: FORGET (2), nodeid: 23, insize: 48
+FORGET 23/1
+DELETE: 23
+unique: 550, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file22
+   unique: 550, success, outsize: 16
+unique: 551, opcode: FORGET (2), nodeid: 24, insize: 48
+FORGET 24/1
+DELETE: 24
+unique: 552, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file23
+   unique: 552, success, outsize: 16
+unique: 553, opcode: FORGET (2), nodeid: 25, insize: 48
+FORGET 25/1
+DELETE: 25
+unique: 554, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file24
+   unique: 554, success, outsize: 16
+unique: 555, opcode: FORGET (2), nodeid: 26, insize: 48
+FORGET 26/1
+DELETE: 26
+unique: 556, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file25
+   unique: 556, success, outsize: 16
+unique: 557, opcode: FORGET (2), nodeid: 27, insize: 48
+FORGET 27/1
+DELETE: 27
+unique: 558, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file26
+   unique: 558, success, outsize: 16
+unique: 559, opcode: FORGET (2), nodeid: 28, insize: 48
+FORGET 28/1
+DELETE: 28
+unique: 560, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file27
+   unique: 560, success, outsize: 16
+unique: 561, opcode: FORGET (2), nodeid: 29, insize: 48
+FORGET 29/1
+DELETE: 29
+unique: 562, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file28
+   unique: 562, success, outsize: 16
+unique: 563, opcode: FORGET (2), nodeid: 30, insize: 48
+FORGET 30/1
+DELETE: 30
+unique: 564, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file29
+   unique: 564, success, outsize: 16
+unique: 565, opcode: FORGET (2), nodeid: 31, insize: 48
+FORGET 31/1
+DELETE: 31
+unique: 566, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file30
+   unique: 566, success, outsize: 16
+unique: 567, opcode: FORGET (2), nodeid: 32, insize: 48
+FORGET 32/1
+DELETE: 32
+unique: 568, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file31
+   unique: 568, success, outsize: 16
+unique: 569, opcode: FORGET (2), nodeid: 33, insize: 48
+FORGET 33/1
+DELETE: 33
+unique: 570, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file32
+   unique: 570, success, outsize: 16
+unique: 571, opcode: FORGET (2), nodeid: 34, insize: 48
+FORGET 34/1
+DELETE: 34
+unique: 572, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file33
+   unique: 572, success, outsize: 16
+unique: 573, opcode: FORGET (2), nodeid: 35, insize: 48
+FORGET 35/1
+DELETE: 35
+unique: 574, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file34
+   unique: 574, success, outsize: 16
+unique: 575, opcode: FORGET (2), nodeid: 36, insize: 48
+FORGET 36/1
+DELETE: 36
+unique: 576, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file35
+   unique: 576, success, outsize: 16
+unique: 577, opcode: FORGET (2), nodeid: 37, insize: 48
+FORGET 37/1
+DELETE: 37
+unique: 578, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file36
+   unique: 578, success, outsize: 16
+unique: 579, opcode: FORGET (2), nodeid: 38, insize: 48
+FORGET 38/1
+DELETE: 38
+unique: 580, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file37
+   unique: 580, success, outsize: 16
+unique: 581, opcode: FORGET (2), nodeid: 39, insize: 48
+FORGET 39/1
+DELETE: 39
+unique: 582, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file38
+   unique: 582, success, outsize: 16
+unique: 583, opcode: FORGET (2), nodeid: 40, insize: 48
+FORGET 40/1
+DELETE: 40
+unique: 584, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file39
+   unique: 584, success, outsize: 16
+unique: 585, opcode: FORGET (2), nodeid: 41, insize: 48
+FORGET 41/1
+DELETE: 41
+unique: 586, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file40
+   unique: 586, success, outsize: 16
+unique: 587, opcode: FORGET (2), nodeid: 42, insize: 48
+FORGET 42/1
+DELETE: 42
+unique: 588, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file41
+   unique: 588, success, outsize: 16
+unique: 589, opcode: FORGET (2), nodeid: 43, insize: 48
+FORGET 43/1
+DELETE: 43
+unique: 590, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file42
+   unique: 590, success, outsize: 16
+unique: 591, opcode: FORGET (2), nodeid: 44, insize: 48
+FORGET 44/1
+DELETE: 44
+unique: 592, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file43
+   unique: 592, success, outsize: 16
+unique: 593, opcode: FORGET (2), nodeid: 45, insize: 48
+FORGET 45/1
+DELETE: 45
+unique: 594, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file44
+   unique: 594, success, outsize: 16
+unique: 595, opcode: FORGET (2), nodeid: 46, insize: 48
+FORGET 46/1
+DELETE: 46
+unique: 596, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file45
+   unique: 596, success, outsize: 16
+unique: 597, opcode: FORGET (2), nodeid: 47, insize: 48
+FORGET 47/1
+DELETE: 47
+unique: 598, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file46
+   unique: 598, success, outsize: 16
+unique: 599, opcode: FORGET (2), nodeid: 48, insize: 48
+FORGET 48/1
+DELETE: 48
+unique: 600, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file47
+   unique: 600, success, outsize: 16
+unique: 601, opcode: FORGET (2), nodeid: 49, insize: 48
+FORGET 49/1
+DELETE: 49
+unique: 602, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file48
+   unique: 602, success, outsize: 16
+unique: 603, opcode: FORGET (2), nodeid: 50, insize: 48
+FORGET 50/1
+DELETE: 50
+unique: 604, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file49
+   unique: 604, success, outsize: 16
+unique: 605, opcode: FORGET (2), nodeid: 51, insize: 48
+FORGET 51/1
+DELETE: 51
+unique: 606, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file50
+   unique: 606, success, outsize: 16
+unique: 607, opcode: FORGET (2), nodeid: 52, insize: 48
+FORGET 52/1
+DELETE: 52
+unique: 608, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file51
+   unique: 608, success, outsize: 16
+unique: 609, opcode: FORGET (2), nodeid: 53, insize: 48
+FORGET 53/1
+DELETE: 53
+unique: 610, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file52
+   unique: 610, success, outsize: 16
+unique: 611, opcode: FORGET (2), nodeid: 54, insize: 48
+FORGET 54/1
+DELETE: 54
+unique: 612, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file53
+   unique: 612, success, outsize: 16
+unique: 613, opcode: FORGET (2), nodeid: 55, insize: 48
+FORGET 55/1
+DELETE: 55
+unique: 614, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file54
+   unique: 614, success, outsize: 16
+unique: 615, opcode: FORGET (2), nodeid: 56, insize: 48
+FORGET 56/1
+DELETE: 56
+unique: 616, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file55
+   unique: 616, success, outsize: 16
+unique: 617, opcode: FORGET (2), nodeid: 57, insize: 48
+FORGET 57/1
+DELETE: 57
+unique: 618, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file56
+   unique: 618, success, outsize: 16
+unique: 619, opcode: FORGET (2), nodeid: 58, insize: 48
+FORGET 58/1
+DELETE: 58
+unique: 620, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file57
+   unique: 620, success, outsize: 16
+unique: 621, opcode: FORGET (2), nodeid: 59, insize: 48
+FORGET 59/1
+DELETE: 59
+unique: 622, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file58
+   unique: 622, success, outsize: 16
+unique: 623, opcode: FORGET (2), nodeid: 60, insize: 48
+FORGET 60/1
+DELETE: 60
+unique: 624, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file59
+   unique: 624, success, outsize: 16
+unique: 625, opcode: FORGET (2), nodeid: 61, insize: 48
+FORGET 61/1
+DELETE: 61
+unique: 626, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file60
+   unique: 626, success, outsize: 16
+unique: 627, opcode: FORGET (2), nodeid: 62, insize: 48
+FORGET 62/1
+DELETE: 62
+unique: 628, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file61
+   unique: 628, success, outsize: 16
+unique: 629, opcode: FORGET (2), nodeid: 63, insize: 48
+FORGET 63/1
+DELETE: 63
+unique: 630, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file62
+   unique: 630, success, outsize: 16
+unique: 631, opcode: FORGET (2), nodeid: 64, insize: 48
+FORGET 64/1
+DELETE: 64
+unique: 632, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file63
+   unique: 632, success, outsize: 16
+unique: 633, opcode: FORGET (2), nodeid: 65, insize: 48
+FORGET 65/1
+DELETE: 65
+unique: 634, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file64
+   unique: 634, success, outsize: 16
+unique: 635, opcode: FORGET (2), nodeid: 66, insize: 48
+FORGET 66/1
+DELETE: 66
+unique: 636, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file65
+   unique: 636, success, outsize: 16
+unique: 637, opcode: FORGET (2), nodeid: 67, insize: 48
+FORGET 67/1
+DELETE: 67
+unique: 638, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file66
+   unique: 638, success, outsize: 16
+unique: 639, opcode: FORGET (2), nodeid: 68, insize: 48
+FORGET 68/1
+DELETE: 68
+unique: 640, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file67
+   unique: 640, success, outsize: 16
+unique: 641, opcode: FORGET (2), nodeid: 69, insize: 48
+FORGET 69/1
+DELETE: 69
+unique: 642, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file68
+   unique: 642, success, outsize: 16
+unique: 643, opcode: FORGET (2), nodeid: 70, insize: 48
+FORGET 70/1
+DELETE: 70
+unique: 644, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file69
+   unique: 644, success, outsize: 16
+unique: 645, opcode: FORGET (2), nodeid: 71, insize: 48
+FORGET 71/1
+DELETE: 71
+unique: 646, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file70
+   unique: 646, success, outsize: 16
+unique: 647, opcode: FORGET (2), nodeid: 72, insize: 48
+FORGET 72/1
+DELETE: 72
+unique: 648, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file71
+   unique: 648, success, outsize: 16
+unique: 649, opcode: FORGET (2), nodeid: 73, insize: 48
+FORGET 73/1
+DELETE: 73
+unique: 650, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file72
+   unique: 650, success, outsize: 16
+unique: 651, opcode: FORGET (2), nodeid: 74, insize: 48
+FORGET 74/1
+DELETE: 74
+unique: 652, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file73
+   unique: 652, success, outsize: 16
+unique: 653, opcode: FORGET (2), nodeid: 75, insize: 48
+FORGET 75/1
+DELETE: 75
+unique: 654, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file74
+   unique: 654, success, outsize: 16
+unique: 655, opcode: FORGET (2), nodeid: 76, insize: 48
+FORGET 76/1
+DELETE: 76
+unique: 656, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file75
+   unique: 656, success, outsize: 16
+unique: 657, opcode: FORGET (2), nodeid: 77, insize: 48
+FORGET 77/1
+DELETE: 77
+unique: 658, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file76
+   unique: 658, success, outsize: 16
+unique: 659, opcode: FORGET (2), nodeid: 78, insize: 48
+FORGET 78/1
+DELETE: 78
+unique: 660, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file77
+   unique: 660, success, outsize: 16
+unique: 661, opcode: FORGET (2), nodeid: 79, insize: 48
+FORGET 79/1
+DELETE: 79
+unique: 662, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file78
+   unique: 662, success, outsize: 16
+unique: 663, opcode: FORGET (2), nodeid: 80, insize: 48
+FORGET 80/1
+DELETE: 80
+unique: 664, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file79
+   unique: 664, success, outsize: 16
+unique: 665, opcode: FORGET (2), nodeid: 81, insize: 48
+FORGET 81/1
+DELETE: 81
+unique: 666, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file80
+   unique: 666, success, outsize: 16
+unique: 667, opcode: FORGET (2), nodeid: 82, insize: 48
+FORGET 82/1
+DELETE: 82
+unique: 668, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file81
+   unique: 668, success, outsize: 16
+unique: 669, opcode: FORGET (2), nodeid: 83, insize: 48
+FORGET 83/1
+DELETE: 83
+unique: 670, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file82
+   unique: 670, success, outsize: 16
+unique: 671, opcode: FORGET (2), nodeid: 84, insize: 48
+FORGET 84/1
+DELETE: 84
+unique: 672, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file83
+   unique: 672, success, outsize: 16
+unique: 673, opcode: FORGET (2), nodeid: 85, insize: 48
+FORGET 85/1
+DELETE: 85
+unique: 674, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file84
+   unique: 674, success, outsize: 16
+unique: 675, opcode: FORGET (2), nodeid: 86, insize: 48
+FORGET 86/1
+DELETE: 86
+unique: 676, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file85
+   unique: 676, success, outsize: 16
+unique: 677, opcode: FORGET (2), nodeid: 87, insize: 48
+FORGET 87/1
+DELETE: 87
+unique: 678, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file86
+   unique: 678, success, outsize: 16
+unique: 679, opcode: FORGET (2), nodeid: 88, insize: 48
+FORGET 88/1
+DELETE: 88
+unique: 680, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file87
+   unique: 680, success, outsize: 16
+unique: 681, opcode: FORGET (2), nodeid: 89, insize: 48
+FORGET 89/1
+DELETE: 89
+unique: 682, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file88
+   unique: 682, success, outsize: 16
+unique: 683, opcode: FORGET (2), nodeid: 90, insize: 48
+FORGET 90/1
+DELETE: 90
+unique: 684, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file89
+   unique: 684, success, outsize: 16
+unique: 685, opcode: FORGET (2), nodeid: 91, insize: 48
+FORGET 91/1
+DELETE: 91
+unique: 686, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file90
+   unique: 686, success, outsize: 16
+unique: 687, opcode: FORGET (2), nodeid: 92, insize: 48
+FORGET 92/1
+DELETE: 92
+unique: 688, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file91
+   unique: 688, success, outsize: 16
+unique: 689, opcode: FORGET (2), nodeid: 93, insize: 48
+FORGET 93/1
+DELETE: 93
+unique: 690, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file92
+   unique: 690, success, outsize: 16
+unique: 691, opcode: FORGET (2), nodeid: 94, insize: 48
+FORGET 94/1
+DELETE: 94
+unique: 692, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file93
+   unique: 692, success, outsize: 16
+unique: 693, opcode: FORGET (2), nodeid: 95, insize: 48
+FORGET 95/1
+DELETE: 95
+unique: 694, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file94
+   unique: 694, success, outsize: 16
+unique: 695, opcode: FORGET (2), nodeid: 96, insize: 48
+FORGET 96/1
+DELETE: 96
+unique: 696, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file95
+   unique: 696, success, outsize: 16
+unique: 697, opcode: FORGET (2), nodeid: 97, insize: 48
+FORGET 97/1
+DELETE: 97
+unique: 698, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file96
+   unique: 698, success, outsize: 16
+unique: 699, opcode: FORGET (2), nodeid: 98, insize: 48
+FORGET 98/1
+DELETE: 98
+unique: 700, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file97
+   unique: 700, success, outsize: 16
+unique: 701, opcode: FORGET (2), nodeid: 99, insize: 48
+FORGET 99/1
+DELETE: 99
+unique: 702, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file98
+   unique: 702, success, outsize: 16
+unique: 703, opcode: FORGET (2), nodeid: 100, insize: 48
+FORGET 100/1
+DELETE: 100
+unique: 704, opcode: UNLINK (10), nodeid: 1, insize: 47
+unlink /file99
+   unique: 704, success, outsize: 16
+unique: 705, opcode: FORGET (2), nodeid: 101, insize: 48
+FORGET 101/1
+DELETE: 101
+unique: 706, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+getattr /file0
+vfs_getattr called
+   unique: 706, error: -2 (No such file or directory), outsize: 16
+unique: 707, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+getattr /file1
+vfs_getattr called
+   unique: 707, error: -2 (No such file or directory), outsize: 16
+unique: 708, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+getattr /file2
+vfs_getattr called
+   unique: 708, error: -2 (No such file or directory), outsize: 16
+unique: 709, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+getattr /file3
+vfs_getattr called
+   unique: 709, error: -2 (No such file or directory), outsize: 16
+unique: 710, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+getattr /file4
+vfs_getattr called
+   unique: 710, error: -2 (No such file or directory), outsize: 16
+unique: 711, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+getattr /file5
+vfs_getattr called
+   unique: 711, error: -2 (No such file or directory), outsize: 16
+unique: 712, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+getattr /file6
+vfs_getattr called
+   unique: 712, error: -2 (No such file or directory), outsize: 16
+unique: 713, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+getattr /file7
+vfs_getattr called
+   unique: 713, error: -2 (No such file or directory), outsize: 16
+unique: 714, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+getattr /file8
+vfs_getattr called
+   unique: 714, error: -2 (No such file or directory), outsize: 16
+unique: 715, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+getattr /file9
+vfs_getattr called
+   unique: 715, error: -2 (No such file or directory), outsize: 16
+unique: 716, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+getattr /file10
+vfs_getattr called
+   unique: 716, error: -2 (No such file or directory), outsize: 16
+unique: 717, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+getattr /file11
+vfs_getattr called
+   unique: 717, error: -2 (No such file or directory), outsize: 16
+unique: 718, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+getattr /file12
+vfs_getattr called
+   unique: 718, error: -2 (No such file or directory), outsize: 16
+unique: 719, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+getattr /file13
+vfs_getattr called
+   unique: 719, error: -2 (No such file or directory), outsize: 16
+unique: 720, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+getattr /file14
+vfs_getattr called
+   unique: 720, error: -2 (No such file or directory), outsize: 16
+unique: 721, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+getattr /file15
+vfs_getattr called
+   unique: 721, error: -2 (No such file or directory), outsize: 16
+unique: 722, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+getattr /file16
+vfs_getattr called
+   unique: 722, error: -2 (No such file or directory), outsize: 16
+unique: 723, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+getattr /file17
+vfs_getattr called
+   unique: 723, error: -2 (No such file or directory), outsize: 16
+unique: 724, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+getattr /file18
+vfs_getattr called
+   unique: 724, error: -2 (No such file or directory), outsize: 16
+unique: 725, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+getattr /file19
+vfs_getattr called
+   unique: 725, error: -2 (No such file or directory), outsize: 16
+unique: 726, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+getattr /file20
+vfs_getattr called
+   unique: 726, error: -2 (No such file or directory), outsize: 16
+unique: 727, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+getattr /file21
+vfs_getattr called
+   unique: 727, error: -2 (No such file or directory), outsize: 16
+unique: 728, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+getattr /file22
+vfs_getattr called
+   unique: 728, error: -2 (No such file or directory), outsize: 16
+unique: 729, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+getattr /file23
+vfs_getattr called
+   unique: 729, error: -2 (No such file or directory), outsize: 16
+unique: 730, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+getattr /file24
+vfs_getattr called
+   unique: 730, error: -2 (No such file or directory), outsize: 16
+unique: 731, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+getattr /file25
+vfs_getattr called
+   unique: 731, error: -2 (No such file or directory), outsize: 16
+unique: 732, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+getattr /file26
+vfs_getattr called
+   unique: 732, error: -2 (No such file or directory), outsize: 16
+unique: 733, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+getattr /file27
+vfs_getattr called
+   unique: 733, error: -2 (No such file or directory), outsize: 16
+unique: 734, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+getattr /file28
+vfs_getattr called
+   unique: 734, error: -2 (No such file or directory), outsize: 16
+unique: 735, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+getattr /file29
+vfs_getattr called
+   unique: 735, error: -2 (No such file or directory), outsize: 16
+unique: 736, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+getattr /file30
+vfs_getattr called
+   unique: 736, error: -2 (No such file or directory), outsize: 16
+unique: 737, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+getattr /file31
+vfs_getattr called
+   unique: 737, error: -2 (No such file or directory), outsize: 16
+unique: 738, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+getattr /file32
+vfs_getattr called
+   unique: 738, error: -2 (No such file or directory), outsize: 16
+unique: 739, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+getattr /file33
+vfs_getattr called
+   unique: 739, error: -2 (No such file or directory), outsize: 16
+unique: 740, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+getattr /file34
+vfs_getattr called
+   unique: 740, error: -2 (No such file or directory), outsize: 16
+unique: 741, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+getattr /file35
+vfs_getattr called
+   unique: 741, error: -2 (No such file or directory), outsize: 16
+unique: 742, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+getattr /file36
+vfs_getattr called
+   unique: 742, error: -2 (No such file or directory), outsize: 16
+unique: 743, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+getattr /file37
+vfs_getattr called
+   unique: 743, error: -2 (No such file or directory), outsize: 16
+unique: 744, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+getattr /file38
+vfs_getattr called
+   unique: 744, error: -2 (No such file or directory), outsize: 16
+unique: 745, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+getattr /file39
+vfs_getattr called
+   unique: 745, error: -2 (No such file or directory), outsize: 16
+unique: 746, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+getattr /file40
+vfs_getattr called
+   unique: 746, error: -2 (No such file or directory), outsize: 16
+unique: 747, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+getattr /file41
+vfs_getattr called
+   unique: 747, error: -2 (No such file or directory), outsize: 16
+unique: 748, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+getattr /file42
+vfs_getattr called
+   unique: 748, error: -2 (No such file or directory), outsize: 16
+unique: 749, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+getattr /file43
+vfs_getattr called
+   unique: 749, error: -2 (No such file or directory), outsize: 16
+unique: 750, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+getattr /file44
+vfs_getattr called
+   unique: 750, error: -2 (No such file or directory), outsize: 16
+unique: 751, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+getattr /file45
+vfs_getattr called
+   unique: 751, error: -2 (No such file or directory), outsize: 16
+unique: 752, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+getattr /file46
+vfs_getattr called
+   unique: 752, error: -2 (No such file or directory), outsize: 16
+unique: 753, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+getattr /file47
+vfs_getattr called
+   unique: 753, error: -2 (No such file or directory), outsize: 16
+unique: 754, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+getattr /file48
+vfs_getattr called
+   unique: 754, error: -2 (No such file or directory), outsize: 16
+unique: 755, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+getattr /file49
+vfs_getattr called
+   unique: 755, error: -2 (No such file or directory), outsize: 16
+unique: 756, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+getattr /file50
+vfs_getattr called
+   unique: 756, error: -2 (No such file or directory), outsize: 16
+unique: 757, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+getattr /file51
+vfs_getattr called
+   unique: 757, error: -2 (No such file or directory), outsize: 16
+unique: 758, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+getattr /file52
+vfs_getattr called
+   unique: 758, error: -2 (No such file or directory), outsize: 16
+unique: 759, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+getattr /file53
+vfs_getattr called
+   unique: 759, error: -2 (No such file or directory), outsize: 16
+unique: 760, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+getattr /file54
+vfs_getattr called
+   unique: 760, error: -2 (No such file or directory), outsize: 16
+unique: 761, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+getattr /file55
+vfs_getattr called
+   unique: 761, error: -2 (No such file or directory), outsize: 16
+unique: 762, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+getattr /file56
+vfs_getattr called
+   unique: 762, error: -2 (No such file or directory), outsize: 16
+unique: 763, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+getattr /file57
+vfs_getattr called
+   unique: 763, error: -2 (No such file or directory), outsize: 16
+unique: 764, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+getattr /file58
+vfs_getattr called
+   unique: 764, error: -2 (No such file or directory), outsize: 16
+unique: 765, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+getattr /file59
+vfs_getattr called
+   unique: 765, error: -2 (No such file or directory), outsize: 16
+unique: 766, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+getattr /file60
+vfs_getattr called
+   unique: 766, error: -2 (No such file or directory), outsize: 16
+unique: 767, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+getattr /file61
+vfs_getattr called
+   unique: 767, error: -2 (No such file or directory), outsize: 16
+unique: 768, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+getattr /file62
+vfs_getattr called
+   unique: 768, error: -2 (No such file or directory), outsize: 16
+unique: 769, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+getattr /file63
+vfs_getattr called
+   unique: 769, error: -2 (No such file or directory), outsize: 16
+unique: 770, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+getattr /file64
+vfs_getattr called
+   unique: 770, error: -2 (No such file or directory), outsize: 16
+unique: 771, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+getattr /file65
+vfs_getattr called
+   unique: 771, error: -2 (No such file or directory), outsize: 16
+unique: 772, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+getattr /file66
+vfs_getattr called
+   unique: 772, error: -2 (No such file or directory), outsize: 16
+unique: 773, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+getattr /file67
+vfs_getattr called
+   unique: 773, error: -2 (No such file or directory), outsize: 16
+unique: 774, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+getattr /file68
+vfs_getattr called
+   unique: 774, error: -2 (No such file or directory), outsize: 16
+unique: 775, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+getattr /file69
+vfs_getattr called
+   unique: 775, error: -2 (No such file or directory), outsize: 16
+unique: 776, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+getattr /file70
+vfs_getattr called
+   unique: 776, error: -2 (No such file or directory), outsize: 16
+unique: 777, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+getattr /file71
+vfs_getattr called
+   unique: 777, error: -2 (No such file or directory), outsize: 16
+unique: 778, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+getattr /file72
+vfs_getattr called
+   unique: 778, error: -2 (No such file or directory), outsize: 16
+unique: 779, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+getattr /file73
+vfs_getattr called
+   unique: 779, error: -2 (No such file or directory), outsize: 16
+unique: 780, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+getattr /file74
+vfs_getattr called
+   unique: 780, error: -2 (No such file or directory), outsize: 16
+unique: 781, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+getattr /file75
+vfs_getattr called
+   unique: 781, error: -2 (No such file or directory), outsize: 16
+unique: 782, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+getattr /file76
+vfs_getattr called
+   unique: 782, error: -2 (No such file or directory), outsize: 16
+unique: 783, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+getattr /file77
+vfs_getattr called
+   unique: 783, error: -2 (No such file or directory), outsize: 16
+unique: 784, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+getattr /file78
+vfs_getattr called
+   unique: 784, error: -2 (No such file or directory), outsize: 16
+unique: 785, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+getattr /file79
+vfs_getattr called
+   unique: 785, error: -2 (No such file or directory), outsize: 16
+unique: 786, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+getattr /file80
+vfs_getattr called
+   unique: 786, error: -2 (No such file or directory), outsize: 16
+unique: 787, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+getattr /file81
+vfs_getattr called
+   unique: 787, error: -2 (No such file or directory), outsize: 16
+unique: 788, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+getattr /file82
+vfs_getattr called
+   unique: 788, error: -2 (No such file or directory), outsize: 16
+unique: 789, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+getattr /file83
+vfs_getattr called
+   unique: 789, error: -2 (No such file or directory), outsize: 16
+unique: 790, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+getattr /file84
+vfs_getattr called
+   unique: 790, error: -2 (No such file or directory), outsize: 16
+unique: 791, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+getattr /file85
+vfs_getattr called
+   unique: 791, error: -2 (No such file or directory), outsize: 16
+unique: 792, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+getattr /file86
+vfs_getattr called
+   unique: 792, error: -2 (No such file or directory), outsize: 16
+unique: 793, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+getattr /file87
+vfs_getattr called
+   unique: 793, error: -2 (No such file or directory), outsize: 16
+unique: 794, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+getattr /file88
+vfs_getattr called
+   unique: 794, error: -2 (No such file or directory), outsize: 16
+unique: 795, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+getattr /file89
+vfs_getattr called
+   unique: 795, error: -2 (No such file or directory), outsize: 16
+unique: 796, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+getattr /file90
+vfs_getattr called
+   unique: 796, error: -2 (No such file or directory), outsize: 16
+unique: 797, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+getattr /file91
+vfs_getattr called
+   unique: 797, error: -2 (No such file or directory), outsize: 16
+unique: 798, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+getattr /file92
+vfs_getattr called
+   unique: 798, error: -2 (No such file or directory), outsize: 16
+unique: 799, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+getattr /file93
+vfs_getattr called
+   unique: 799, error: -2 (No such file or directory), outsize: 16
+unique: 800, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+getattr /file94
+vfs_getattr called
+   unique: 800, error: -2 (No such file or directory), outsize: 16
+unique: 801, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+getattr /file95
+vfs_getattr called
+   unique: 801, error: -2 (No such file or directory), outsize: 16
+unique: 802, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+getattr /file96
+vfs_getattr called
+   unique: 802, error: -2 (No such file or directory), outsize: 16
+unique: 803, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+getattr /file97
+vfs_getattr called
+   unique: 803, error: -2 (No such file or directory), outsize: 16
+unique: 804, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+getattr /file98
+vfs_getattr called
+   unique: 804, error: -2 (No such file or directory), outsize: 16
+unique: 805, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+getattr /file99
+vfs_getattr called
+   unique: 805, error: -2 (No such file or directory), outsize: 16
+vfs_unmount called
+Disk usage: 3025151 reads, 202 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+getattr /file0
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+getattr /file1
+vfs_getattr called
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+getattr /file2
+vfs_getattr called
+   unique: 4, error: -2 (No such file or directory), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+getattr /file3
+vfs_getattr called
+   unique: 5, error: -2 (No such file or directory), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+getattr /file4
+vfs_getattr called
+   unique: 6, error: -2 (No such file or directory), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+getattr /file5
+vfs_getattr called
+   unique: 7, error: -2 (No such file or directory), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+getattr /file6
+vfs_getattr called
+   unique: 8, error: -2 (No such file or directory), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+getattr /file7
+vfs_getattr called
+   unique: 9, error: -2 (No such file or directory), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+getattr /file8
+vfs_getattr called
+   unique: 10, error: -2 (No such file or directory), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+getattr /file9
+vfs_getattr called
+   unique: 11, error: -2 (No such file or directory), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+getattr /file10
+vfs_getattr called
+   unique: 12, error: -2 (No such file or directory), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+getattr /file11
+vfs_getattr called
+   unique: 13, error: -2 (No such file or directory), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+getattr /file12
+vfs_getattr called
+   unique: 14, error: -2 (No such file or directory), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+getattr /file13
+vfs_getattr called
+   unique: 15, error: -2 (No such file or directory), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+getattr /file14
+vfs_getattr called
+   unique: 16, error: -2 (No such file or directory), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+getattr /file15
+vfs_getattr called
+   unique: 17, error: -2 (No such file or directory), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+getattr /file16
+vfs_getattr called
+   unique: 18, error: -2 (No such file or directory), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+getattr /file17
+vfs_getattr called
+   unique: 19, error: -2 (No such file or directory), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+getattr /file18
+vfs_getattr called
+   unique: 20, error: -2 (No such file or directory), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+getattr /file19
+vfs_getattr called
+   unique: 21, error: -2 (No such file or directory), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+getattr /file20
+vfs_getattr called
+   unique: 22, error: -2 (No such file or directory), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+getattr /file21
+vfs_getattr called
+   unique: 23, error: -2 (No such file or directory), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+getattr /file22
+vfs_getattr called
+   unique: 24, error: -2 (No such file or directory), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+getattr /file23
+vfs_getattr called
+   unique: 25, error: -2 (No such file or directory), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+getattr /file24
+vfs_getattr called
+   unique: 26, error: -2 (No such file or directory), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+getattr /file25
+vfs_getattr called
+   unique: 27, error: -2 (No such file or directory), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+getattr /file26
+vfs_getattr called
+   unique: 28, error: -2 (No such file or directory), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+getattr /file27
+vfs_getattr called
+   unique: 29, error: -2 (No such file or directory), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+getattr /file28
+vfs_getattr called
+   unique: 30, error: -2 (No such file or directory), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+getattr /file29
+vfs_getattr called
+   unique: 31, error: -2 (No such file or directory), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+getattr /file30
+vfs_getattr called
+   unique: 32, error: -2 (No such file or directory), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+getattr /file31
+vfs_getattr called
+   unique: 33, error: -2 (No such file or directory), outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+getattr /file32
+vfs_getattr called
+   unique: 34, error: -2 (No such file or directory), outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+getattr /file33
+vfs_getattr called
+   unique: 35, error: -2 (No such file or directory), outsize: 16
+unique: 36, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+getattr /file34
+vfs_getattr called
+   unique: 36, error: -2 (No such file or directory), outsize: 16
+unique: 37, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+getattr /file35
+vfs_getattr called
+   unique: 37, error: -2 (No such file or directory), outsize: 16
+unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+getattr /file36
+vfs_getattr called
+   unique: 38, error: -2 (No such file or directory), outsize: 16
+unique: 39, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+getattr /file37
+vfs_getattr called
+   unique: 39, error: -2 (No such file or directory), outsize: 16
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+getattr /file38
+vfs_getattr called
+   unique: 40, error: -2 (No such file or directory), outsize: 16
+unique: 41, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+getattr /file39
+vfs_getattr called
+   unique: 41, error: -2 (No such file or directory), outsize: 16
+unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+getattr /file40
+vfs_getattr called
+   unique: 42, error: -2 (No such file or directory), outsize: 16
+unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+getattr /file41
+vfs_getattr called
+   unique: 43, error: -2 (No such file or directory), outsize: 16
+unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+getattr /file42
+vfs_getattr called
+   unique: 44, error: -2 (No such file or directory), outsize: 16
+unique: 45, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+getattr /file43
+vfs_getattr called
+   unique: 45, error: -2 (No such file or directory), outsize: 16
+unique: 46, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+getattr /file44
+vfs_getattr called
+   unique: 46, error: -2 (No such file or directory), outsize: 16
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+getattr /file45
+vfs_getattr called
+   unique: 47, error: -2 (No such file or directory), outsize: 16
+unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+getattr /file46
+vfs_getattr called
+   unique: 48, error: -2 (No such file or directory), outsize: 16
+unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+getattr /file47
+vfs_getattr called
+   unique: 49, error: -2 (No such file or directory), outsize: 16
+unique: 50, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+getattr /file48
+vfs_getattr called
+   unique: 50, error: -2 (No such file or directory), outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+getattr /file49
+vfs_getattr called
+   unique: 51, error: -2 (No such file or directory), outsize: 16
+unique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+getattr /file50
+vfs_getattr called
+   unique: 52, error: -2 (No such file or directory), outsize: 16
+unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+getattr /file51
+vfs_getattr called
+   unique: 53, error: -2 (No such file or directory), outsize: 16
+unique: 54, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+getattr /file52
+vfs_getattr called
+   unique: 54, error: -2 (No such file or directory), outsize: 16
+unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+getattr /file53
+vfs_getattr called
+   unique: 55, error: -2 (No such file or directory), outsize: 16
+unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+getattr /file54
+vfs_getattr called
+   unique: 56, error: -2 (No such file or directory), outsize: 16
+unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+getattr /file55
+vfs_getattr called
+   unique: 57, error: -2 (No such file or directory), outsize: 16
+unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+getattr /file56
+vfs_getattr called
+   unique: 58, error: -2 (No such file or directory), outsize: 16
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+getattr /file57
+vfs_getattr called
+   unique: 59, error: -2 (No such file or directory), outsize: 16
+unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+getattr /file58
+vfs_getattr called
+   unique: 60, error: -2 (No such file or directory), outsize: 16
+unique: 61, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+getattr /file59
+vfs_getattr called
+   unique: 61, error: -2 (No such file or directory), outsize: 16
+unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+getattr /file60
+vfs_getattr called
+   unique: 62, error: -2 (No such file or directory), outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+getattr /file61
+vfs_getattr called
+   unique: 63, error: -2 (No such file or directory), outsize: 16
+unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+getattr /file62
+vfs_getattr called
+   unique: 64, error: -2 (No such file or directory), outsize: 16
+unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+getattr /file63
+vfs_getattr called
+   unique: 65, error: -2 (No such file or directory), outsize: 16
+unique: 66, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+getattr /file64
+vfs_getattr called
+   unique: 66, error: -2 (No such file or directory), outsize: 16
+unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+getattr /file65
+vfs_getattr called
+   unique: 67, error: -2 (No such file or directory), outsize: 16
+unique: 68, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+getattr /file66
+vfs_getattr called
+   unique: 68, error: -2 (No such file or directory), outsize: 16
+unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+getattr /file67
+vfs_getattr called
+   unique: 69, error: -2 (No such file or directory), outsize: 16
+unique: 70, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+getattr /file68
+vfs_getattr called
+   unique: 70, error: -2 (No such file or directory), outsize: 16
+unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+getattr /file69
+vfs_getattr called
+   unique: 71, error: -2 (No such file or directory), outsize: 16
+unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+getattr /file70
+vfs_getattr called
+   unique: 72, error: -2 (No such file or directory), outsize: 16
+unique: 73, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+getattr /file71
+vfs_getattr called
+   unique: 73, error: -2 (No such file or directory), outsize: 16
+unique: 74, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+getattr /file72
+vfs_getattr called
+   unique: 74, error: -2 (No such file or directory), outsize: 16
+unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+getattr /file73
+vfs_getattr called
+   unique: 75, error: -2 (No such file or directory), outsize: 16
+unique: 76, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+getattr /file74
+vfs_getattr called
+   unique: 76, error: -2 (No such file or directory), outsize: 16
+unique: 77, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+getattr /file75
+vfs_getattr called
+   unique: 77, error: -2 (No such file or directory), outsize: 16
+unique: 78, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+getattr /file76
+vfs_getattr called
+   unique: 78, error: -2 (No such file or directory), outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+getattr /file77
+vfs_getattr called
+   unique: 79, error: -2 (No such file or directory), outsize: 16
+unique: 80, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+getattr /file78
+vfs_getattr called
+   unique: 80, error: -2 (No such file or directory), outsize: 16
+unique: 81, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+getattr /file79
+vfs_getattr called
+   unique: 81, error: -2 (No such file or directory), outsize: 16
+unique: 82, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+getattr /file80
+vfs_getattr called
+   unique: 82, error: -2 (No such file or directory), outsize: 16
+unique: 83, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+getattr /file81
+vfs_getattr called
+   unique: 83, error: -2 (No such file or directory), outsize: 16
+unique: 84, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+getattr /file82
+vfs_getattr called
+   unique: 84, error: -2 (No such file or directory), outsize: 16
+unique: 85, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+getattr /file83
+vfs_getattr called
+   unique: 85, error: -2 (No such file or directory), outsize: 16
+unique: 86, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+getattr /file84
+vfs_getattr called
+   unique: 86, error: -2 (No such file or directory), outsize: 16
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+getattr /file85
+vfs_getattr called
+   unique: 87, error: -2 (No such file or directory), outsize: 16
+unique: 88, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+getattr /file86
+vfs_getattr called
+   unique: 88, error: -2 (No such file or directory), outsize: 16
+unique: 89, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+getattr /file87
+vfs_getattr called
+   unique: 89, error: -2 (No such file or directory), outsize: 16
+unique: 90, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+getattr /file88
+vfs_getattr called
+   unique: 90, error: -2 (No such file or directory), outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+getattr /file89
+vfs_getattr called
+   unique: 91, error: -2 (No such file or directory), outsize: 16
+unique: 92, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+getattr /file90
+vfs_getattr called
+   unique: 92, error: -2 (No such file or directory), outsize: 16
+unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+getattr /file91
+vfs_getattr called
+   unique: 93, error: -2 (No such file or directory), outsize: 16
+unique: 94, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+getattr /file92
+vfs_getattr called
+   unique: 94, error: -2 (No such file or directory), outsize: 16
+unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+getattr /file93
+vfs_getattr called
+   unique: 95, error: -2 (No such file or directory), outsize: 16
+unique: 96, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+getattr /file94
+vfs_getattr called
+   unique: 96, error: -2 (No such file or directory), outsize: 16
+unique: 97, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+getattr /file95
+vfs_getattr called
+   unique: 97, error: -2 (No such file or directory), outsize: 16
+unique: 98, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+getattr /file96
+vfs_getattr called
+   unique: 98, error: -2 (No such file or directory), outsize: 16
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+getattr /file97
+vfs_getattr called
+   unique: 99, error: -2 (No such file or directory), outsize: 16
+unique: 100, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+getattr /file98
+vfs_getattr called
+   unique: 100, error: -2 (No such file or directory), outsize: 16
+unique: 101, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+getattr /file99
+vfs_getattr called
+   unique: 101, error: -2 (No such file or directory), outsize: 16
+vfs_unmount called
+Disk usage: 1000001 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test1.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 2
+   unique: 3, success, outsize: 160
+unique: 4, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 4, success, outsize: 32
+unique: 5, opcode: FLUSH (25), nodeid: 2, insize: 64
+   unique: 5, error: -38 (Function not implemented), outsize: 16
+unique: 6, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 6, success, outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 7, error: -2 (No such file or directory), outsize: 16
+unique: 8, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test2.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   NODEID: 3
+   unique: 8, success, outsize: 160
+unique: 9, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 9, success, outsize: 32
+unique: 10, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 10, success, outsize: 16
+unique: 11, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test2.txt
+   unique: 11, success, outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 12, error: -2 (No such file or directory), outsize: 16
+unique: 13, opcode: FORGET (2), nodeid: 3, insize: 48
+FORGET 3/1
+DELETE: 3
+unique: 14, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test3.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 4
+   unique: 14, success, outsize: 160
+unique: 15, opcode: IOCTL (39), nodeid: 4, insize: 72
+   unique: 15, success, outsize: 32
+unique: 16, opcode: RELEASE (18), nodeid: 4, insize: 64
+   unique: 16, success, outsize: 16
+unique: 17, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test1.txt
+   unique: 17, success, outsize: 16
+unique: 18, opcode: OPEN (14), nodeid: 4, insize: 48
+   unique: 18, success, outsize: 32
+unique: 19, opcode: FORGET (2), nodeid: 2, insize: 48
+FORGET 2/1
+DELETE: 2
+unique: 20, opcode: SETATTR (4), nodeid: 4, insize: 128
+truncate /test3.txt 0
+getattr /test3.txt
+vfs_getattr called
+   unique: 20, success, outsize: 120
+unique: 21, opcode: IOCTL (39), nodeid: 4, insize: 72
+   unique: 21, success, outsize: 32
+unique: 22, opcode: RELEASE (18), nodeid: 4, insize: 64
+   unique: 22, success, outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   unique: 23, error: -2 (No such file or directory), outsize: 16
+unique: 24, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test4.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   NODEID: 5
+   unique: 24, success, outsize: 160
+unique: 25, opcode: IOCTL (39), nodeid: 5, insize: 72
+   unique: 25, success, outsize: 32
+unique: 26, opcode: RELEASE (18), nodeid: 5, insize: 64
+   unique: 26, success, outsize: 16
+unique: 27, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test4.txt
+   unique: 27, success, outsize: 16
+unique: 28, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test3.txt
+   unique: 28, success, outsize: 16
+unique: 29, opcode: FORGET (2), nodeid: 5, insize: 48
+FORGET 5/1
+DELETE: 5
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   unique: 30, error: -2 (No such file or directory), outsize: 16
+unique: 31, opcode: FORGET (2), nodeid: 4, insize: 48
+FORGET 4/1
+DELETE: 4
+unique: 32, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test1.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 6
+   unique: 32, success, outsize: 160
+unique: 33, opcode: IOCTL (39), nodeid: 6, insize: 72
+   unique: 33, success, outsize: 32
+unique: 34, opcode: RELEASE (18), nodeid: 6, insize: 64
+   unique: 34, success, outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 35, error: -2 (No such file or directory), outsize: 16
+unique: 36, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test2.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   NODEID: 7
+   unique: 36, success, outsize: 160
+unique: 37, opcode: IOCTL (39), nodeid: 7, insize: 72
+   unique: 37, success, outsize: 32
+unique: 38, opcode: RELEASE (18), nodeid: 7, insize: 64
+   unique: 38, success, outsize: 16
+unique: 39, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test2.txt
+   unique: 39, success, outsize: 16
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 40, error: -2 (No such file or directory), outsize: 16
+unique: 41, opcode: FORGET (2), nodeid: 7, insize: 48
+FORGET 7/1
+DELETE: 7
+unique: 42, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test3.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 8
+   unique: 42, success, outsize: 160
+unique: 43, opcode: IOCTL (39), nodeid: 8, insize: 72
+   unique: 43, success, outsize: 32
+unique: 44, opcode: RELEASE (18), nodeid: 8, insize: 64
+   unique: 44, success, outsize: 16
+unique: 45, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test1.txt
+   unique: 45, success, outsize: 16
+unique: 46, opcode: OPEN (14), nodeid: 8, insize: 48
+   unique: 46, success, outsize: 32
+unique: 47, opcode: FORGET (2), nodeid: 6, insize: 48
+FORGET 6/1
+DELETE: 6
+unique: 48, opcode: SETATTR (4), nodeid: 8, insize: 128
+truncate /test3.txt 0
+getattr /test3.txt
+vfs_getattr called
+   unique: 48, success, outsize: 120
+unique: 49, opcode: IOCTL (39), nodeid: 8, insize: 72
+   unique: 49, success, outsize: 32
+unique: 50, opcode: RELEASE (18), nodeid: 8, insize: 64
+   unique: 50, success, outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   unique: 51, error: -2 (No such file or directory), outsize: 16
+unique: 52, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test4.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   NODEID: 9
+   unique: 52, success, outsize: 160
+unique: 53, opcode: IOCTL (39), nodeid: 9, insize: 72
+   unique: 53, success, outsize: 32
+unique: 54, opcode: RELEASE (18), nodeid: 9, insize: 64
+   unique: 54, success, outsize: 16
+unique: 55, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test4.txt
+   unique: 55, success, outsize: 16
+unique: 56, opcode: FORGET (2), nodeid: 9, insize: 48
+FORGET 9/1
+DELETE: 9
+unique: 57, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test3.txt
+   unique: 57, success, outsize: 16
+unique: 58, opcode: FORGET (2), nodeid: 8, insize: 48
+FORGET 8/1
+DELETE: 8
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   unique: 59, error: -2 (No such file or directory), outsize: 16
+unique: 60, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test1.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 10
+   unique: 60, success, outsize: 160
+unique: 61, opcode: IOCTL (39), nodeid: 10, insize: 72
+   unique: 61, success, outsize: 32
+unique: 62, opcode: RELEASE (18), nodeid: 10, insize: 64
+   unique: 62, success, outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 63, error: -2 (No such file or directory), outsize: 16
+unique: 64, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test2.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   NODEID: 11
+   unique: 64, success, outsize: 160
+unique: 65, opcode: IOCTL (39), nodeid: 11, insize: 72
+   unique: 65, success, outsize: 32
+unique: 66, opcode: RELEASE (18), nodeid: 11, insize: 64
+   unique: 66, success, outsize: 16
+unique: 67, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test2.txt
+   unique: 67, success, outsize: 16
+unique: 68, opcode: FORGET (2), nodeid: 11, insize: 48
+FORGET 11/1
+DELETE: 11
+unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 69, error: -2 (No such file or directory), outsize: 16
+unique: 70, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test3.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 12
+   unique: 70, success, outsize: 160
+unique: 71, opcode: IOCTL (39), nodeid: 12, insize: 72
+   unique: 71, success, outsize: 32
+unique: 72, opcode: RELEASE (18), nodeid: 12, insize: 64
+   unique: 72, success, outsize: 16
+unique: 73, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test1.txt
+   unique: 73, success, outsize: 16
+unique: 74, opcode: FORGET (2), nodeid: 10, insize: 48
+FORGET 10/1
+DELETE: 10
+unique: 75, opcode: OPEN (14), nodeid: 12, insize: 48
+   unique: 75, success, outsize: 32
+unique: 76, opcode: SETATTR (4), nodeid: 12, insize: 128
+truncate /test3.txt 0
+getattr /test3.txt
+vfs_getattr called
+   unique: 76, success, outsize: 120
+unique: 77, opcode: IOCTL (39), nodeid: 12, insize: 72
+   unique: 77, success, outsize: 32
+unique: 78, opcode: RELEASE (18), nodeid: 12, insize: 64
+   unique: 78, success, outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   unique: 79, error: -2 (No such file or directory), outsize: 16
+unique: 80, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test4.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   NODEID: 13
+   unique: 80, success, outsize: 160
+unique: 81, opcode: IOCTL (39), nodeid: 13, insize: 72
+   unique: 81, success, outsize: 32
+unique: 82, opcode: RELEASE (18), nodeid: 13, insize: 64
+   unique: 82, success, outsize: 16
+unique: 83, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test4.txt
+   unique: 83, success, outsize: 16
+unique: 84, opcode: FORGET (2), nodeid: 13, insize: 48
+FORGET 13/1
+DELETE: 13
+unique: 85, opcode: UNLINK (10), nodeid: 1, insize: 50
+unlink /test3.txt
+   unique: 85, success, outsize: 16
+unique: 86, opcode: FORGET (2), nodeid: 12, insize: 48
+FORGET 12/1
+DELETE: 12
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   unique: 87, error: -2 (No such file or directory), outsize: 16
+unique: 88, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test1.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 14
+   unique: 88, success, outsize: 160
+unique: 89, opcode: IOCTL (39), nodeid: 14, insize: 72
+   unique: 89, success, outsize: 32
+unique: 90, opcode: RELEASE (18), nodeid: 14, insize: 64
+   unique: 90, success, outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 91, error: -2 (No such file or directory), outsize: 16
+unique: 92, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 92, error: -2 (No such file or directory), outsize: 16
+unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   unique: 93, error: -2 (No such file or directory), outsize: 16
+vfs_unmount called
+Disk usage: 290069 reads, 30 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test1.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test1.txt
+getattr /test1.txt
+vfs_getattr called
+   NODEID: 2
+   unique: 3, success, outsize: 160
+unique: 4, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 4, success, outsize: 32
+unique: 5, opcode: FLUSH (25), nodeid: 2, insize: 64
+   unique: 5, error: -38 (Function not implemented), outsize: 16
+unique: 6, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 6, success, outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   unique: 7, error: -2 (No such file or directory), outsize: 16
+unique: 8, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test2.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test2.txt
+getattr /test2.txt
+vfs_getattr called
+   NODEID: 3
+   unique: 8, success, outsize: 160
+unique: 9, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 9, success, outsize: 32
+unique: 10, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 10, success, outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 11, error: -2 (No such file or directory), outsize: 16
+unique: 12, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test3.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 4
+   unique: 12, success, outsize: 160
+unique: 13, opcode: IOCTL (39), nodeid: 4, insize: 72
+   unique: 13, success, outsize: 32
+unique: 14, opcode: RELEASE (18), nodeid: 4, insize: 64
+   unique: 14, success, outsize: 16
+unique: 15, opcode: OPENDIR (27), nodeid: 1, insize: 48
+   unique: 15, success, outsize: 32
+unique: 16, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 0
+   unique: 16, success, outsize: 56
+unique: 17, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 1
+   unique: 17, success, outsize: 56
+unique: 18, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 2
+   unique: 18, success, outsize: 56
+unique: 19, opcode: READDIR (28), nodeid: 1, insize: 80
+readdir[0] from 3
+   unique: 19, success, outsize: 16
+unique: 20, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
+   unique: 20, success, outsize: 16
+vfs_unmount called
+Disk usage: 70013 reads, 5 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test3.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test3.txt
+getattr /test3.txt
+vfs_getattr called
+   NODEID: 2
+   unique: 3, success, outsize: 160
+unique: 4, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 4, success, outsize: 32
+unique: 5, opcode: GETXATTR (22), nodeid: 2, insize: 68
+   unique: 5, error: -38 (Function not implemented), outsize: 16
+unique: 6, opcode: WRITE (16), nodeid: 2, insize: 90
+write[0] 10 bytes to 0 flags: 0x8001
+   write[0] 10 bytes to 0
+   unique: 6, success, outsize: 24
+unique: 7, opcode: FLUSH (25), nodeid: 2, insize: 64
+   unique: 7, error: -38 (Function not implemented), outsize: 16
+unique: 8, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 8, success, outsize: 16
+unique: 9, opcode: GETATTR (3), nodeid: 2, insize: 56
+getattr /test3.txt
+vfs_getattr called
+   unique: 9, success, outsize: 120
+unique: 10, opcode: OPEN (14), nodeid: 2, insize: 48
+   unique: 10, success, outsize: 32
+unique: 11, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 11, success, outsize: 32
+unique: 12, opcode: READ (15), nodeid: 2, insize: 80
+read[0] 4096 bytes from 0 flags: 0x8000
+   read[0] 4096 bytes from 0
+   unique: 12, success, outsize: 4112
+unique: 13, opcode: GETATTR (3), nodeid: 2, insize: 56
+getattr /test3.txt
+vfs_getattr called
+   unique: 13, success, outsize: 120
+unique: 14, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 14, success, outsize: 16
+unique: 15, opcode: OPEN (14), nodeid: 2, insize: 48
+   unique: 15, success, outsize: 32
+unique: 16, opcode: IOCTL (39), nodeid: 2, insize: 72
+   unique: 16, success, outsize: 32
+unique: 17, opcode: SETATTR (4), nodeid: 2, insize: 128
+truncate /test3.txt 0
+getattr /test3.txt
+vfs_getattr called
+   unique: 17, success, outsize: 120
+unique: 18, opcode: RELEASE (18), nodeid: 2, insize: 64
+   unique: 18, success, outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   unique: 19, error: -2 (No such file or directory), outsize: 16
+unique: 20, opcode: CREATE (35), nodeid: 1, insize: 66
+create flags: 0x8241 /test4.txt 0100644 umask=0022
+   create[0] flags: 0x8241 /test4.txt
+getattr /test4.txt
+vfs_getattr called
+   NODEID: 3
+   unique: 20, success, outsize: 160
+unique: 21, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 21, success, outsize: 32
+unique: 22, opcode: WRITE (16), nodeid: 3, insize: 2090
+write[0] 2010 bytes to 0 flags: 0x8001
+   write[0] 2010 bytes to 0
+   unique: 22, success, outsize: 24
+unique: 23, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 23, success, outsize: 16
+unique: 24, opcode: OPEN (14), nodeid: 3, insize: 48
+   unique: 24, success, outsize: 32
+unique: 25, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 25, success, outsize: 32
+unique: 26, opcode: GETATTR (3), nodeid: 3, insize: 56
+getattr /test4.txt
+vfs_getattr called
+   unique: 26, success, outsize: 120
+unique: 27, opcode: READ (15), nodeid: 3, insize: 80
+read[0] 4096 bytes from 0 flags: 0x8000
+   read[0] 4096 bytes from 0
+   unique: 27, success, outsize: 4112
+unique: 28, opcode: GETATTR (3), nodeid: 3, insize: 56
+getattr /test4.txt
+vfs_getattr called
+   unique: 28, success, outsize: 120
+unique: 29, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 29, success, outsize: 16
+unique: 30, opcode: OPEN (14), nodeid: 3, insize: 48
+   unique: 30, success, outsize: 32
+unique: 31, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 31, success, outsize: 32
+unique: 32, opcode: SETATTR (4), nodeid: 3, insize: 128
+truncate /test4.txt 1024
+getattr /test4.txt
+vfs_getattr called
+   unique: 32, success, outsize: 120
+unique: 33, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 33, success, outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+getattr /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 34, error: -2 (No such file or directory), outsize: 16
+unique: 35, opcode: CREATE (35), nodeid: 1, insize: 85
+create flags: 0x8241 /abcdefghijklmnopqrstuvwxyzab 0100644 umask=0022
+   create[0] flags: 0x8241 /abcdefghijklmnopqrstuvwxyzab
+getattr /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   NODEID: 4
+   unique: 35, success, outsize: 160
+unique: 36, opcode: IOCTL (39), nodeid: 4, insize: 72
+   unique: 36, success, outsize: 32
+unique: 37, opcode: RELEASE (18), nodeid: 4, insize: 64
+   unique: 37, success, outsize: 16
+unique: 38, opcode: SETATTR (4), nodeid: 4, insize: 128
+getattr /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 38, success, outsize: 120
+unique: 39, opcode: OPEN (14), nodeid: 3, insize: 48
+   unique: 39, success, outsize: 32
+unique: 40, opcode: SETATTR (4), nodeid: 3, insize: 128
+truncate /test4.txt 0
+getattr /test4.txt
+vfs_getattr called
+   unique: 40, success, outsize: 120
+unique: 41, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 41, success, outsize: 32
+unique: 42, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 0 flags: 0x8001
+   write[0] 4096 bytes to 0
+   unique: 42, success, outsize: 24
+unique: 43, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 4096 flags: 0x8001
+   write[0] 4096 bytes to 4096
+   unique: 43, success, outsize: 24
+unique: 44, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 8192 flags: 0x8001
+   write[0] 4096 bytes to 8192
+   unique: 44, success, outsize: 24
+unique: 45, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 12288 flags: 0x8001
+   write[0] 4096 bytes to 12288
+   unique: 45, success, outsize: 24
+unique: 46, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 16384 flags: 0x8001
+   write[0] 4096 bytes to 16384
+   unique: 46, success, outsize: 24
+unique: 47, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 20480 flags: 0x8001
+   write[0] 4096 bytes to 20480
+   unique: 47, success, outsize: 24
+unique: 48, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 24576 flags: 0x8001
+   write[0] 4096 bytes to 24576
+   unique: 48, success, outsize: 24
+unique: 49, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 28672 flags: 0x8001
+   write[0] 4096 bytes to 28672
+   unique: 49, success, outsize: 24
+unique: 50, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 32768 flags: 0x8001
+   write[0] 4096 bytes to 32768
+   unique: 50, success, outsize: 24
+unique: 51, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 36864 flags: 0x8001
+   write[0] 4096 bytes to 36864
+   unique: 51, success, outsize: 24
+unique: 52, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 40960 flags: 0x8001
+   write[0] 4096 bytes to 40960
+   unique: 52, success, outsize: 24
+unique: 53, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 45056 flags: 0x8001
+   write[0] 4096 bytes to 45056
+   unique: 53, success, outsize: 24
+unique: 54, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 49152 flags: 0x8001
+   write[0] 4096 bytes to 49152
+   unique: 54, success, outsize: 24
+unique: 55, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 53248 flags: 0x8001
+   write[0] 4096 bytes to 53248
+   unique: 55, success, outsize: 24
+unique: 56, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 57344 flags: 0x8001
+   write[0] 4096 bytes to 57344
+   unique: 56, success, outsize: 24
+unique: 57, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 61440 flags: 0x8001
+   write[0] 4096 bytes to 61440
+   unique: 57, success, outsize: 24
+unique: 58, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 65536 flags: 0x8001
+   write[0] 4096 bytes to 65536
+   unique: 58, success, outsize: 24
+unique: 59, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 69632 flags: 0x8001
+   write[0] 4096 bytes to 69632
+   unique: 59, success, outsize: 24
+unique: 60, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 73728 flags: 0x8001
+   write[0] 4096 bytes to 73728
+   unique: 60, success, outsize: 24
+unique: 61, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 77824 flags: 0x8001
+   write[0] 4096 bytes to 77824
+   unique: 61, success, outsize: 24
+unique: 62, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 81920 flags: 0x8001
+   write[0] 4096 bytes to 81920
+   unique: 62, success, outsize: 24
+unique: 63, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 86016 flags: 0x8001
+   write[0] 4096 bytes to 86016
+   unique: 63, success, outsize: 24
+unique: 64, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 90112 flags: 0x8001
+   write[0] 4096 bytes to 90112
+   unique: 64, success, outsize: 24
+unique: 65, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 94208 flags: 0x8001
+   write[0] 4096 bytes to 94208
+   unique: 65, success, outsize: 24
+unique: 66, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 98304 flags: 0x8001
+   write[0] 4096 bytes to 98304
+   unique: 66, success, outsize: 24
+unique: 67, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 102400 flags: 0x8001
+   write[0] 4096 bytes to 102400
+   unique: 67, success, outsize: 24
+unique: 68, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 106496 flags: 0x8001
+   write[0] 4096 bytes to 106496
+   unique: 68, success, outsize: 24
+unique: 69, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 110592 flags: 0x8001
+   write[0] 4096 bytes to 110592
+   unique: 69, success, outsize: 24
+unique: 70, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 114688 flags: 0x8001
+   write[0] 4096 bytes to 114688
+   unique: 70, success, outsize: 24
+unique: 71, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 118784 flags: 0x8001
+   write[0] 4096 bytes to 118784
+   unique: 71, success, outsize: 24
+unique: 72, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 122880 flags: 0x8001
+   write[0] 4096 bytes to 122880
+   unique: 72, success, outsize: 24
+unique: 73, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 126976 flags: 0x8001
+   write[0] 4096 bytes to 126976
+   unique: 73, success, outsize: 24
+unique: 74, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 131072 flags: 0x8001
+   write[0] 4096 bytes to 131072
+   unique: 74, success, outsize: 24
+unique: 75, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 135168 flags: 0x8001
+   write[0] 4096 bytes to 135168
+   unique: 75, success, outsize: 24
+unique: 76, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 139264 flags: 0x8001
+   write[0] 4096 bytes to 139264
+   unique: 76, success, outsize: 24
+unique: 77, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 143360 flags: 0x8001
+   write[0] 4096 bytes to 143360
+   unique: 77, success, outsize: 24
+unique: 78, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 147456 flags: 0x8001
+   write[0] 4096 bytes to 147456
+   unique: 78, success, outsize: 24
+unique: 79, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 151552 flags: 0x8001
+   write[0] 4096 bytes to 151552
+   unique: 79, success, outsize: 24
+unique: 80, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 155648 flags: 0x8001
+   write[0] 4096 bytes to 155648
+   unique: 80, success, outsize: 24
+unique: 81, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 159744 flags: 0x8001
+   write[0] 4096 bytes to 159744
+   unique: 81, success, outsize: 24
+unique: 82, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 163840 flags: 0x8001
+   write[0] 4096 bytes to 163840
+   unique: 82, success, outsize: 24
+unique: 83, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 167936 flags: 0x8001
+   write[0] 4096 bytes to 167936
+   unique: 83, success, outsize: 24
+unique: 84, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 172032 flags: 0x8001
+   write[0] 4096 bytes to 172032
+   unique: 84, success, outsize: 24
+unique: 85, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 176128 flags: 0x8001
+   write[0] 4096 bytes to 176128
+   unique: 85, success, outsize: 24
+unique: 86, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 180224 flags: 0x8001
+   write[0] 4096 bytes to 180224
+   unique: 86, success, outsize: 24
+unique: 87, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 184320 flags: 0x8001
+   write[0] 4096 bytes to 184320
+   unique: 87, success, outsize: 24
+unique: 88, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 188416 flags: 0x8001
+   write[0] 4096 bytes to 188416
+   unique: 88, success, outsize: 24
+unique: 89, opcode: WRITE (16), nodeid: 3, insize: 4176
+write[0] 4096 bytes to 192512 flags: 0x8001
+   write[0] 4096 bytes to 192512
+   unique: 89, success, outsize: 24
+unique: 90, opcode: WRITE (16), nodeid: 3, insize: 3482
+write[0] 3402 bytes to 196608 flags: 0x8001
+   write[0] 3402 bytes to 196608
+   unique: 90, success, outsize: 24
+unique: 91, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 91, success, outsize: 16
+unique: 92, opcode: OPEN (14), nodeid: 3, insize: 48
+   unique: 92, success, outsize: 32
+unique: 93, opcode: IOCTL (39), nodeid: 3, insize: 72
+   unique: 93, success, outsize: 32
+unique: 94, opcode: GETATTR (3), nodeid: 3, insize: 56
+getattr /test4.txt
+vfs_getattr called
+   unique: 94, success, outsize: 120
+unique: 95, opcode: READ (15), nodeid: 3, insize: 80
+read[0] 16384 bytes from 0 flags: 0x8000
+   read[0] 16384 bytes from 0
+   unique: 95, success, outsize: 16400
+unique: 96, opcode: READ (15), nodeid: 3, insize: 80
+read[0] 32768 bytes from 16384 flags: 0x8000
+   read[0] 32768 bytes from 16384
+   unique: 96, success, outsize: 32784
+unique: 97, opcode: READ (15), nodeid: 3, insize: 80
+read[0] 65536 bytes from 49152 flags: 0x8000
+   read[0] 65536 bytes from 49152
+   unique: 97, success, outsize: 65552
+unique: 98, opcode: READ (15), nodeid: 3, insize: 80
+read[0] 86016 bytes from 114688 flags: 0x8000
+   read[0] 86016 bytes from 114688
+   unique: 98, success, outsize: 86032
+unique: 99, opcode: GETATTR (3), nodeid: 3, insize: 56
+getattr /test4.txt
+vfs_getattr called
+   unique: 99, success, outsize: 120
+unique: 100, opcode: RELEASE (18), nodeid: 3, insize: 64
+   unique: 100, success, outsize: 16
+vfs_unmount called
+Disk usage: 60904 reads, 807 writes
+RUNNING './3600fs -s -d /tmp/3600fs.RDQ4h4'
+FUSE library version: 2.8.6
+nullpath_ok: 0
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.17
+flags=0x0000047b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.12
+   flags=0x00000011
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+getattr /test
+vfs_getattr called
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: MKDIR (9), nodeid: 1, insize: 53
+   unique: 3, error: -38 (Function not implemented), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+getattr /test
+vfs_getattr called
+   unique: 4, error: -2 (No such file or directory), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+getattr /test
+vfs_getattr called
+   unique: 5, error: -2 (No such file or directory), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+getattr /test
+vfs_getattr called
+   unique: 6, error: -2 (No such file or directory), outsize: 16
+vfs_unmount called
+Disk usage: 40001 reads, 2 writes

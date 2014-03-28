@@ -1,0 +1,19 @@
+Jack Burns
+Joana Vukatana
+CS3600 Project 3 - DNS
+
+Team MostlyHarmless
+
+- Parses input from the console
+- Packs parsed input into a byte array packet
+- Sends the packet and waits for a response
+- Receives a response and unpacks it
+- Prints information from response to console
+
+Approach:
+
+As the project is clearly segmented into two clear parts (sending + receiving)
+we've implemented the project in such a way that will allow for easily 
+expanding into the full implementation. Currently our implementation supports
+the first milestone requirements with inclusion of MX and NS server records
+that will be fully flushed out on the projects completion.

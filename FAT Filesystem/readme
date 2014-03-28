@@ -1,0 +1,24 @@
+Project #2 : User-Level File System
+
+Team "Mostly Harmless" 
+Jack Burns & Joana Vukatana
+
+This is the second project for the class CS3600, and here we are required to implement a basic user-level file system. During this project we will be using FUSE to help us in the implementation of FAT. In this way we are able to test our file system with any existing tools and commands. 
+
+The File Allocation Table (FAT) that we are implementing, is a file system divided into blocks, a contiguous area of disk storage used by the file allocation. 
+Even though the FAT doesn't have a great perfomance or reliability, we decided to implement it, since it is relatively simple to implement and very robust.
+
+Final Submission Notes:
+Ultimately, reading and writing large files that spanned multiple blocks gave us a lot of trouble and we still fail two of the tests.
+
+Disk Layout:
+
+The VCB is the first block of the disk (at relative address 0). This block contains the information needed to find the rest of the file system structures. 
+
+After the VCB, the disk will also have a number of Directory Entry (DE), a number of File Allocation Table (FAT) blocks and a number of Data Blocks (DB). All the blocks, except for DB, will be used to store metadata and not actual user data. It is in DBs where the user data will be stored. 
+
+Our DEs will be declared as an array of directory entries, and each entry will contain the name of the file and index of the first block that contains the file's data.
+
+The FAT will be able to tell which DB follows which in the layout of the files. Our FAt will contain one entry for each data blocks that exists on the disk. 
+
+

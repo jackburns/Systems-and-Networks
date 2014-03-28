@@ -1,0 +1,24 @@
+COMMAND: ./3600mkfs 1000
+Formatting the disk with size 1000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
+COMMAND: ./3600mkfs 100000
+Formatting the disk with size 100000 
+Disk usage: 0 reads, 2 writes
